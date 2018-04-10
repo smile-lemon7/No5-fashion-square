@@ -1,0 +1,84 @@
+@charset "utf-8";
+/*样式重置*/
+html,body,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,form,input,img,a {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,b,strong {
+    font-weight: normal;
+}
+i,em {
+    display: inline-block;
+    font-style: normal;
+}
+span {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+img {
+    display: block;
+    border: 0 none;
+}
+input {
+    border:none;
+    outline: none;
+}
+ul,ol {
+    list-style: none
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.ind {
+    text-indent: 2em;
+}
+html,body {
+    width: 100%;
+    font-size:12px;
+    background: #fff;
+    color: #666;
+    font-family: simsun,"Microsoft yahei";
+}
+/*.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}*/
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+/*边框的通用样式*/
+.bL {
+    border-left: 1px solid #e0e0e0;
+}
+.bR {
+    border-right: 1px solid #e0e0e0;
+}
+.bT {
+    border-top: 1px solid #e0e0e0;
+}
+.bB {
+    border-bottom: 1px solid #e0e0e0;
+}
