@@ -1,4 +1,5 @@
 @import "reset.css";
+@charset "utf-8";
 .w100 {
     width: 100%;
     margin: 0 auto;
@@ -661,7 +662,8 @@
         
     }
     .saleBox {
-        @include public(447px);
+        @include public(482px);
+         border-bottom: 1px solid #e4e4e4;
         .saleTabs {
             position: relative;
             .tabArrow {
@@ -753,6 +755,10 @@
                     dl {
                         width: 240px;
                         float: left;
+                        &.salebr {
+                            border-right: 1px solid #e4e4e4;
+                            width: 239px;
+                        }
                         dt {
                             img {
                                 width: 150px;
@@ -797,8 +803,9 @@
                     margin-top: 63px;
                 }
             }
-            .salebox4 {
+            .salebox4 { 
                 width: 234px;
+                border-left: 1px solid #e4e4e4;
                 img {
                     width: 150px;
                     height: 150px;
@@ -822,14 +829,581 @@
         }
     }
     
-    .brand {
-       
-        height: 380px;
+    .brandBox {
+        @include public(352px);
+        .brandTitle {
+            @include public(40px);
+//          margin: 20px 0 10px 0;
+            border-bottom: 2px solid #d0d0d0;
+            h3 {
+                width: 230px;
+                padding-left: 2px;
+                font-size: 18px;
+                font-family: "microsoft yahei";
+                font-weight: 700;
+                color: #333;
+                height: 40px;
+                line-height: 40px;
+            }
+            p {
+                height: 25px;
+                width: 900px;
+                margin-top: 10px;
+                text-align: right;
+                a {
+                    padding: 0 10px;
+                    height: 25px;
+                    line-height: 25px;
+                    border-right: 1px solid #333;
+                    &.brandbrn {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        .brandCon {
+            margin-top: 10px;
+            li {
+                width: 236px;
+                height: 300px;
+                float: left;
+                margin-right: 5px;
+                &.brandm0 {
+                    margin: 0;
+                }
+            }
+        }
+        
     }
     
     
     
+
+    .hufuBox {
+        .hufuTit {
+            @include public(40px);
+            margin: 20px 0 10px 0;
+            border-bottom: 2px solid #0094ff;
+            h3 {
+                width: 230px;
+                height: 40px;
+                padding-left: 2px;
+                float: left;
+            }
+            p {
+                height: 25px;
+                width: 900px;
+                margin-top: 10px;
+                text-align: right;
+                a {
+                    padding: 0 10px;
+                    height: 25px;
+                    line-height: 25px;
+                    border-right: 1px solid #333;
+                    &.brandbrn {
+                        border-right: none;
+                    }
+                    &:hover {
+                        color: #f00;
+                    }
+                }
+            }
+        }
+        .hufuCon {
+            @include public(538px);
+            border-bottom: 1px solid #f1f1f1;
+            .hufusub {
+                width: 268px;
+                height: 480px;
+            }
+            .hufuC,.hufutop {
+                width: 690px;
+                font-family: "microsoft yahei";
+                dl {
+                    width: 344px;
+                    height: 180px;
+                    padding: 7px 0 14px 0;
+                    border-bottom: 1px solid #f1f1f1;
+                    &.hufuTL {
+                        border: 1px solid #e4e4e4;
+                        border-left: none;
+                        border-top: none;
+                    }
+                    &.hufuH {
+                        dt {
+                            width: 190px;
+                            text-align: center;
+                            float: left;
+                            img {
+                                width: 180px;
+                            }
+                        }
+                        dd {
+                            float: right;
+                            width: 150px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                        }
+                        
+                    }
+                    dd.goodname {
+                        height: 36px;
+                        color: #666;
+                        margin: 28px 0 10px 0;
+                    }
+                    dd.goodexec {
+                        height: 32px;
+                        color: #000;
+                        margin-bottom: 30px;
+                    }
+                    dd.goodprice {
+                        a {
+                            color: #f00;
+                            span {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .hufuC {
+                .hufuB {
+                    dl {
+                        float: left;
+                        width: 181px;
+                        border-right: 1px solid #f1f1f1;
+                        padding: 15px 24px 82px 24px;
+                        font-size: 14px;
+                        &.hufubr0 {
+                            border-right: 0;
+                        }
+                        dt {
+                            img {
+                                width: 180px;
+                            }
+                        }
+                        dd.goodname {
+                                height: 18px;
+                                color: #666;
+                                margin: 0;
+                        }
+                        dd.goodexec {
+                            height: 18px;
+                            color: #000;
+                            overflow: hidden;
+                            margin-bottom: 0;
+                        }
+                        dd.goodprice {
+                            color: #f00;
+                            font-size: 14px;
+                            span {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            .hufuR {
+                width: 218px;
+                h2 {
+                    width: 218px;
+                    height: 32px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #f00;
+                    border-bottom: 2px solid #d0d0d0;
+                }
+                .listShow {
+                    li {
+                        width: 218px;
+                        cursor: pointer;
+                        p {
+                            display: block;
+                            height: 43px;
+                            line-height: 43px;
+                            padding: 0 8px;
+                            border-bottom: 1px solid #e4e4e4;
+                            i {
+                                display: block;
+                                width: 18px;
+                                height: 18px;
+                                margin-top: 12px;
+                                line-height: 18px;
+                                font-weight: 700;
+                                border-radius: 50%;
+                                color: #f00;
+                                text-align: center;
+                                border: 1px solid #f00;
+                            }
+                            span {
+                                display: block;
+                                margin-left: 6px;
+                            }
+                        }
+                        .hufuinfo {
+                            display: none;
+                            text-align: center;
+                            font-weight: 700;
+                            padding: 9px 0;
+                            border-bottom: 2px solid #e4e4e4;
+                            &.showspe {
+                                display: block;
+                            }
+                            dt{
+                                img {
+                                    width: 160px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .hufuname {
+                                color: #000;
+                                line-height: 22px;
+                            }
+                            .hufuprice {
+                                color: #f00;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .hufuBanner {
+                @include public(58px);
+                border: 1px solid #e4e4e4e;
+                padding: 0 6px;
+                float: left;
+                a {
+                    display: block;
+                    float: left;
+                    margin: 11px 12px;
+                    img {
+                        width: 75px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .xsbox {
+        #xsl {
+            width: 326px;
+            height: 480px;
+            margin-right: 1px;
+        }
+        #xsC {
+            width: 655px;
+            position: relative;
+            #centerT {
+                display: block;
+                width: 355px;
+                height: 276px;
+                margin-bottom: 1px;
+                img {
+                    height: 276px;
+                    width: 355px;
+                }
+            }
+            .img5 {
+                position: absolute;
+                right: 22px;
+                top: -1px;
+                width: 275px;;
+                height: 480px;
+            }
+        }
+        .centerB {
+            width: 177px;
+            height: 203px;
+            margin-right: 1px;
+            float: left;
+        }
+    }
+    
+    .menbox {
+        .menCon {
+            width: 614px;
+            height: 480px;
+            li {
+                float: left;
+                width: 184px;
+                height: 227px;
+                border-right: 1px solid #f1f1f1;                
+                border-bottom: 1px solid #f1f1f1;
+                padding: 6px 10px;
+                text-align: center;
+                &.br0 {
+                    border-right: none;
+                }
+                &.bb0 {
+                    border-bottom: none;
+                }
+                dt {
+                    img {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+                dd {
+                    font-size: 14px;
+                    height: 18px;
+                    font-family: "microsoft yahei";
+                    &.goodname {
+                        margin-top: 5px;
+                    }
+                    &.goodprice {
+                        font-size: 14px;
+                        color: #f00;
+                        span {
+                            font-weight: 700;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            } 
+        }
+        .pic {
+            width: 344px;
+            height: 480px;
+        }
+    }
+
+    
+    .beauty {
+        @include public(800);
+        font-family: "microsoft yahei";
+        .beautyinfo {
+            width: 765px;
+            height: 478px;
+            border: 1px solid #e4e4e4;
+            margin-top: 25px;
+            border-top: 2px solid #d0d0d0;
+            padding: 1px 20px;
+            h2 {
+                height: 36px;
+                line-height: 36px;
+                font-size: 16px;
+                border-bottom: 1px solid #e4e4e4;
+                padding-left: 4px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            .infol {
+                width: 250px;
+                padding: 0 32px 0 10px;
+                dt {
+                    img {
+                        width: 250px;
+                        height: 330px;
+                    }
+                }
+                .title {
+                    width: 250px;
+                    height: 16px;
+                    line-height: 16px;
+                    margin-top: 13px;
+                    font-weight: 700;
+                    font-size: 13spx;
+                    color: #545454;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .links {
+                    line-height: 22px;
+                    height: 48px;
+                    color: #999;
+                    a {
+                        color: #f00;
+                    }
+                }
+            }
+            .infor {
+                width: 465px;
+                dl {
+                    height: 140px;
+                    dt {
+                        float: left;
+                        width:  170px;
+                        img {
+                            width: 153px;
+                            height: 117px;
+                        }
+                    }
+                    dd {
+                        width: 291px;
+                        float: left;
+                        &.title {
+                            height: 36px;   
+                            margin-right: 3px;
+                            color: #545454;
+                            line-height: 36px;
+                            font-weight: 700;
+                            span {
+                                color: #00a2ff;
+                                margin-right: 9px;
+                            }
+                        }
+                        &.links {
+                            height: 68px;
+                            color: #999;s
+                            a {
+                                color: #f00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .beautyshare {
+            position: relative;
+            width: 336px;
+            margin-top: 25px;
+            background: #f9f9f9;
+            border: 1px solid #e4e4e4;
+            border-top: 2px solid #d0d0d0;
+            padding: 0 10px 10px 10px;
+            h2 {
+              position: absolute;  
+              width: 338px;
+              height: 43px;
+              background: url(../images/dbg.jpg) no-repeat;
+              line-height: 36px;
+              top: 9px;
+              left: -9px;
+              font-size: 16px;
+              color: #fff;
+              padding-left: 19px;
+            }
+            dl {
+                width: 323px;
+                height: 93px;
+                margin: 0 8px;
+                border-bottom: 1px dashed #ccc;
+                &.first {
+                    padding-top: 61px;
+                }
+                dt {
+                    width: 90px;
+                    text-align: right;
+                    img {
+                        width: 87px;
+                        border: 1px solid #ccc;
+                    }
+                }
+                dd {
+
+                    &.tit {
+                        margin-top: 3px;
+                        font-weight: 700;
+                        line-height: 29px;
+                        height: 29px;
+                        color: #545454;
+                        overflow: hidden;
+                        width: 222px;
+                        text-overflow: ellipsis;
+                        white-space: noWrap;
+                    }
+                    &.links {
+                        width: 200px;
+                        color: #999;
+                        line-height: 18px;
+                        height: 38px;
+                        span {
+                            color: #f00;
+                            font-size: 15px;
+                        }
+                    }
+                
+                }
+                
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

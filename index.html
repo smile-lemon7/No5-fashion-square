@@ -1021,10 +1021,10 @@
 		<!--特价-->
 			<div class="saleBox">
 				<div class="saleTabs">
-					<div class="tabArrow">
+					<div class="tabArrow" id="tabArrow">
 						<span></span>
 					</div>
-					<ul>
+					<ul id="saleTab">
 						<li>本周特价</li>
 						<li>明星推荐</li>
 						<li>新品上架</li>
@@ -1032,144 +1032,1525 @@
 						<li class="bgn">超值小样</li>
 					</ul>
 				</div>
-				<div class="salebox">
-					<div class="salebox1 saleb">
-						<dl>
-							<dt>
-								<a href="javascript:;">
-									<img src="images/salepic1.jpg" alt="小姐花漾淡香氛50ml" title="小姐花漾淡香氛50ml" />
-								</a>
-							</dt>
-							<dd class="saleinfo">
-								<a href="javascript">Dior 迪奥</a><br>
-								<a href="javascript">小姐花漾淡香氛50ml</a><br>
-							</dd>
-							<dd class="saleExec">
-								<a href="javascript">气息温柔甜美，为每一位热爱生活与自由的美丽女人</a><br>
-							</dd>
-							<dd class="price">
-								￥
-								<span>558.00</span>
-								<i>(1.2折)</i>
-							</dd>
-						</dl>
-					</div>
-					<div class="salebox2 saleb">
-						<div class="saleT">
+				<div class="saleboxAll">
+					<div class="salebox currentAll">
+						<div class="salebox1 saleb">
 							<dl>
 								<dt>
 									<a href="javascript:;">
-										<img src="images/salepic21.jpg" alt="小姐花漾淡香氛50ml" title="碧欧泉活泉润透水份露50ml" />
+										<img src="images/salepic1.jpg" alt="小姐花漾淡香氛50ml" title="小姐花漾淡香氛50ml" />
 									</a>
 								</dt>
 								<dd class="saleinfo">
-									<a href="javascript">碧欧泉活泉润透水份露50ml</a><br>
-								</dd>
-								<dd class="price">
-									￥
-									<span>208.00</span>
-									<i>(5.4折)</i>
-								</dd>
-							</dl>
-							<dl>
-								<dd class="saleinfo">
-									<a href="javascript">娇韵诗柔滑身体磨砂乳霜200ml</a><br>
-								</dd>
-								<dd class="price">
-									￥
-									<span>248.00</span>
-									<i>(6.4折)</i>
-								</dd>
-								<dt>
-									<a href="javascript:;">
-										<img src="images/salepic22.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
-									</a>
-								</dt>
-							</dl>
-						</div>
-						<div class="saleB clearfix">
-							<dl>
-								<dt class="fl">
-									<a href="javascript:;">
-										<img src="images/salepic23.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
-									</a>
-								</dt>
-								<dd class="saleinfo">
-									<a href="javascript">Estee Lauder 雅诗兰黛</a><br>
-									<a href="javascript">舒缓眼膜 10对</a>
+									<a href="javascript">Dior 迪奥</a><br>
+									<a href="javascript">小姐花漾淡香氛50ml</a><br>
 								</dd>
 								<dd class="saleExec">
-									<a href="javascript">卓效改善薄弱眼周肌肤，减少细纹，幼纹</a>
+									<a href="javascript">气息温柔甜美，为每一位热爱生活与自由的美丽女人</a><br>
 								</dd>
 								<dd class="price">
 									￥
-									<span>168.00</span>
-									<i>(5.6折)</i>
+									<span>558.00</span>
+									<i>(1.2折)</i>
 								</dd>
 							</dl>
 						</div>
-					</div>
-					<div class="salebox3 saleb">
-						<dl>
-							<dd class="saleinfo">
-								<a href="javascript">Giorgio Armani 阿玛尼</a><br>
-								<a href="javascript">造型紧颜粉底液SPF20 3#</a><br>
-							</dd>
-							<dd class="saleExec">
-								<a href="javascript">重新定义质感底妆，塑造自然娇嫩肌肤</a><br>
-							</dd>
-							<dd class="price">
-								￥
-								<span>379.00</span>
-								<i>(3.5折)</i>
-							</dd>
-							<dt>
-								<a href="javascript:;">
-									<img src="images/salepic31.jpg" alt="小姐花漾淡香氛50ml" title="小姐花漾淡香氛50ml" />
-								</a>
-							</dt>
-						</dl>
-					</div>
-					<div class="salebox4 saleb">
-						<div class="saleT">
+						<div class="salebox2 saleb">
+							<div class="saleT">
+								<dl class="salebr">
+									<dt>
+										<a href="javascript:;">
+											<img src="images/salepic21.jpg" alt="小姐花漾淡香氛50ml" title="碧欧泉活泉润透水份露50ml" />
+										</a>
+									</dt>
+									<dd class="saleinfo">
+										<a href="javascript">碧欧泉活泉润透水份露50ml</a><br>
+									</dd>
+									<dd class="price">
+										￥
+										<span>208.00</span>
+										<i>(5.4折)</i>
+									</dd>
+								</dl>
+								<dl>
+									<dd class="saleinfo">
+										<a href="javascript">娇韵诗柔滑身体磨砂乳霜200ml</a><br>
+									</dd>
+									<dd class="price">
+										￥
+										<span>248.00</span>
+										<i>(6.4折)</i>
+									</dd>
+									<dt>
+										<a href="javascript:;">
+											<img src="images/salepic22.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+										</a>
+									</dt>
+								</dl>
+							</div>
+							<div class="saleB clearfix">
+								<dl>
+									<dt class="fl">
+										<a href="javascript:;">
+											<img src="images/salepic23.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+										</a>
+									</dt>
+									<dd class="saleinfo">
+										<a href="javascript">Estee Lauder 雅诗兰黛</a><br>
+										<a href="javascript">舒缓眼膜 10对</a>
+									</dd>
+									<dd class="saleExec">
+										<a href="javascript">卓效改善薄弱眼周肌肤，减少细纹，幼纹</a>
+									</dd>
+									<dd class="price">
+										￥
+										<span>168.00</span>
+										<i>(5.6折)</i>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="salebox3 saleb">
 							<dl>
-								<dt>
-									<a href="javascript:;">
-										<img src="images/salepic41.jpg" alt="小姐花漾淡香氛50ml" title="碧欧泉活泉润透水份露50ml" />
-									</a>
-								</dt>
 								<dd class="saleinfo">
-									<a href="javascript">馥蕾诗睡莲滋润舒缓眼部凝露</a><br>
+									<a href="javascript">Giorgio Armani 阿玛尼</a><br>
+									<a href="javascript">造型紧颜粉底液SPF20 3#</a><br>
+								</dd>
+								<dd class="saleExec">
+									<a href="javascript">重新定义质感底妆，塑造自然娇嫩肌肤</a><br>
 								</dd>
 								<dd class="price">
 									￥
-									<span>208.00</span>
-									<i>(5.4折)</i>
+									<span>379.00</span>
+									<i>(3.5折)</i>
 								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/salepic31.jpg" alt="小姐花漾淡香氛50ml" title="小姐花漾淡香氛50ml" />
+									</a>
+								</dt>
 							</dl>
 						</div>
-						<div class="saleB clearfix">
-							<dl>
-								<dt>
-									<a href="javascript:;">
-										<img src="images/salepic42.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
-									</a>
-								</dt>
-								<dd class="saleinfo">
-									<a href="javascript">佑天兰双倍玻尿酸保湿果冻面膜3</a><br>
-								</dd>
-								<dd class="price">
-									￥
-									<span>168.00</span>
-									<i>(5.6折)</i>
-								</dd>
-							</dl>
+						<div class="salebox4 saleb">
+							<div class="saleT">
+								<dl>
+									<dt>
+										<a href="javascript:;">
+											<img src="images/salepic41.jpg" alt="小姐花漾淡香氛50ml" title="碧欧泉活泉润透水份露50ml" />
+										</a>
+									</dt>
+									<dd class="saleinfo">
+										<a href="javascript">馥蕾诗睡莲滋润舒缓眼部凝露</a><br>
+									</dd>
+									<dd class="price">
+										￥
+										<span>208.00</span>
+										<i>(5.4折)</i>
+									</dd>
+								</dl>
+							</div>
+							<div class="saleB clearfix">
+								<dl>
+									<dt>
+										<a href="javascript:;">
+											<img src="images/salepic42.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+										</a>
+									</dt>
+									<dd class="saleinfo">
+										<a href="javascript">佑天兰双倍玻尿酸保湿果冻面膜3</a><br>
+									</dd>
+									<dd class="price">
+										￥
+										<span>168.00</span>
+										<i>(5.6折)</i>
+									</dd>
+								</dl>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			
+		<!--品牌活动-->
+			<div class="brandBox">
+				<div class="brandTitle clearfix">
+					<h3 class="fl">品牌活动</h3>
+					<p class="fr">
+						<a href="javascript:;">科颜氏3.3折起</a>
+						<a href="javascript:;">兰蔻专场1.6折起</a>
+						<a href="javascript:;" class="brandbrn">高丝雪肌精4.3折起</a>
+					</p>
+				</div>
+				<div class="brandCon">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="images/brand1.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/brand2.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/brand3.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/brand4.jpg" alt="" />
+							</a>
+						</li>
+						<li class="brandm0">
+							<a href="javascript:;">
+								<img src="images/brand5.jpg" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!--护肤-->
+			<div class="hufuBox">
+				<div class="hufuTit clearfix">
+					<h3 class="fl">
+						<img src="images/hufu.jpg" alt="" />
+					</h3>
+					<p class="fr">
+						<a href="javascript:;">倩碧三部曲</a>
+						<a href="javascript:;">小黑瓶</a>
+						<a href="javascript:;">卸妆油</a>
+						<a href="javascript:;">补水保湿</a>
+						<a href="javascript:;">保湿面膜</a>
+						<a href="javascript:;">小棕瓶</a>
+						<a href="javascript:;" class="brandbrn">红石榴</a>
+					</p>
+				</div>
+				<div class="hufuCon clearfix">
+					<div class="hufusub fl">
+						<a href="javascript:;">
+							<img src="images/huful.jpg" alt="" />
+						</a>
+					</div>
+					<div class="hufuC fl">
+						<div class="hufutop clearfix">
+							<dl class="hufuH clearfix fl hufuTL">
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc4.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">韩国JM</a><br>
+									<a href="javascript:;">玻尿酸蜂蜜保湿补水面</a>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">打造蜂蜜般光采肌肤</a>
+								</dd>
+								<dd class="goodprice">
+									<a href="javascript:;">￥<span>69.00</span>（5折）</a>
+								</dd>
+							</dl>
+							<dl class="hufuH clearfix fr">
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc5.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">韩国JM</a><br>
+									<a href="javascript:;">玻尿酸蜂蜜保湿补水面</a>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">打造蜂蜜般光采肌肤</a>
+								</dd>
+								<dd class="goodprice">
+									<a href="javascript:;">￥<span>69.00</span>（5折）</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="hufuB">
+							<dl>
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc1.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+							<dl>
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc2.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+							<dl class="hufubr0">
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc3.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div class="hufuR fr">
+						<h2>护肤热销</h2>
+						<ul class="listShow" id="listShow">
+							<li>
+								<p>
+									<i class="fl">1</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo showspe">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">2</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">3</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">4</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">5</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hufuBanner">
+						<a href="javascript:;">
+							<img src="images/abrand1.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand2.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand3.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand4.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand5.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand6.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand7.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand8.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand9.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand10.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand11.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand12.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--彩妆-->
+			<div class="hufuBox">
+				<div class="hufuTit clearfix">
+					<h3 class="fl">
+						<img src="images/caiz.jpg" alt="" />
+					</h3>
+					<p class="fr">
+						<a href="javascript:;">倩碧三部曲</a>
+						<a href="javascript:;">小黑瓶</a>
+						<a href="javascript:;">卸妆油</a>
+						<a href="javascript:;">补水保湿</a>
+						<a href="javascript:;">保湿面膜</a>
+						<a href="javascript:;">小棕瓶</a>
+						<a href="javascript:;" class="brandbrn">红石榴</a>
+					</p>
+				</div>
+				<div class="hufuCon clearfix">
+					<div class="hufusub fl">
+						<a href="javascript:;">
+							<img src="images/caizhuang.jpg" alt="" />
+						</a>
+					</div>
+					<div class="hufuC fl">
+						<div class="hufutop clearfix">
+							<dl class="hufuH clearfix fl hufuTL">
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc4.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">韩国JM</a><br>
+									<a href="javascript:;">玻尿酸蜂蜜保湿补水面</a>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">打造蜂蜜般光采肌肤</a>
+								</dd>
+								<dd class="goodprice">
+									<a href="javascript:;">￥<span>69.00</span>（5折）</a>
+								</dd>
+							</dl>
+							<dl class="hufuH clearfix fr">
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc5.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">韩国JM</a><br>
+									<a href="javascript:;">玻尿酸蜂蜜保湿补水面</a>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">打造蜂蜜般光采肌肤</a>
+								</dd>
+								<dd class="goodprice">
+									<a href="javascript:;">￥<span>69.00</span>（5折）</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="hufuB">
+							<dl>
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc1.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+							<dl>
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc2.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+							<dl class="hufubr0">
+								<dd class="goodname">
+									<a href="javascript">兰蔻肌底精华浸润修护面膜</a><br>
+								</dd>
+								<dd class="goodexec">
+									<a href="javascript:;">新升级力作 小嫩膜</a>
+								</dd>
+								<dd class="goodprice">
+									￥
+									<span>465.00</span>
+									<i>(7.4折)</i>
+								</dd>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/hufuc3.jpg" alt="娇韵诗柔滑身体磨砂乳霜200ml" title="娇韵诗柔滑身体磨砂乳霜200ml" />
+									</a>
+								</dt>
+							</dl>
+						</div>
+					</div>
+					<div class="hufuR fr">
+						<h2>护肤热销</h2>
+						<ul class="listShow showspe">
+							<li>
+								<p>
+									<i class="fl">1</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">2</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo showspe">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">3</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">4</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">5</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hufuBanner">
+						<a href="javascript:;">
+							<img src="images/abrand1.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand2.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand3.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand4.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand5.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand6.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand7.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand8.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand9.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand10.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand11.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand12.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--香水-->
+			<div class="hufuBox xsbox">
+				<div class="hufuTit clearfix">
+					<h3 class="fl">
+						<img src="images/xiangs.jpg" alt="" />
+					</h3>
+					<p class="fr">
+						<a href="javascript:;">倩碧三部曲</a>
+						<a href="javascript:;">小黑瓶</a>
+						<a href="javascript:;">卸妆油</a>
+						<a href="javascript:;">补水保湿</a>
+						<a href="javascript:;">保湿面膜</a>
+						<a href="javascript:;">小棕瓶</a>
+						<a href="javascript:;" class="brandbrn">红石榴</a>
+					</p>
+				</div>
+				<div class="hufuCon clearfix">
+					<div class="hufusub fl" id="xsl">
+						<a href="javascript:;">
+							<img src="images/xs10.jpg" alt="" />
+						</a>
+					</div>
+					<div class="hufuC fl" id="xsC">
+						<a href="javascript:;" id="centerT fl"><img src="images/xs2.jpg" alt="" /></a>
+						<a href="javascript:;" class="centerB"><img src="images/xs3.jpg" alt="" /></a>
+						<a href="javascript:;" class="centerB"><img src="images/xs4.jpg" alt="" /></a>
+						<div class="img5 fl">
+							<a href="javascript:;">
+								<img src="images/xs5.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="hufuR fr">
+						<h2>护肤热销</h2>
+						<ul class="listShow showspe">
+							<li>
+								<p>
+									<i class="fl">1</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">2</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo showspe">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">3</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">4</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">5</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hufuBanner">
+						<a href="javascript:;">
+							<img src="images/abrand1.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand2.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand3.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand4.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand5.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand6.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand7.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand8.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand9.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand10.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand11.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand12.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--男士-->
+			<div class="hufuBox xsbox menbox">
+				<div class="hufuTit clearfix">
+					<h3 class="fl">
+						<img src="images/men.jpg" alt="" />
+					</h3>
+					<p class="fr">
+						<a href="javascript:;">倩碧三部曲</a>
+						<a href="javascript:;">小黑瓶</a>
+						<a href="javascript:;">卸妆油</a>
+						<a href="javascript:;">补水保湿</a>
+						<a href="javascript:;">保湿面膜</a>
+						<a href="javascript:;">小棕瓶</a>
+						<a href="javascript:;" class="brandbrn">红石榴</a>
+					</p>
+				</div>
+				<div class="hufuCon clearfix">
+					<ul class="menCon fl">
+						<li>
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men1.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men2.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="br0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men3.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men4.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men5.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="br0 bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men6.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="pic fl">
+						<a href="javascript:;">
+							<img src="images/men7.jpg" alt="" />
+						</a>
+					</div>
+					
+					<div class="hufuR fr">
+						<h2>护肤热销</h2>
+						<ul class="listShow showspe">
+							<li>
+								<p>
+									<i class="fl">1</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">2</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo showspe">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">3</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">4</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">5</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hufuBanner">
+						<a href="javascript:;">
+							<img src="images/abrand1.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand2.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand3.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand4.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand5.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand6.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand7.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand8.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand9.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand10.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand11.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand12.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--美发-->		
+			<div class="hufuBox xsbox menbox">
+				<div class="hufuTit clearfix">
+					<h3 class="fl">
+						<img src="images/meifa.jpg" alt="" />
+					</h3>
+					<p class="fr">
+						<a href="javascript:;">倩碧三部曲</a>
+						<a href="javascript:;">小黑瓶</a>
+						<a href="javascript:;">卸妆油</a>
+						<a href="javascript:;">补水保湿</a>
+						<a href="javascript:;">保湿面膜</a>
+						<a href="javascript:;">小棕瓶</a>
+						<a href="javascript:;" class="brandbrn">红石榴</a>
+					</p>
+				</div>
+				<div class="hufuCon clearfix">
+					<div class="pic fl">
+						<a href="javascript:;">
+							<img src="images/meifa1.jpg" alt="" />
+						</a>
+					</div>
+					<ul class="menCon fl">
+						<li>
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men1.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men2.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="br0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men3.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men4.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men5.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+						<li class="br0 bb0">
+							<dl>
+								<dt>
+									<a href="javascript:;">
+										<img src="images/men6.jpg" alt="" />
+									</a>
+								</dt>
+								<dd class="goodname">
+									<a href="javascript:;">碧欧泉男士水动力保湿乳</a>
+								</dd>
+								<dd class="goodprice">
+									<span>￥188.00</span>
+									(3.9折)
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="hufuR fr">
+						<h2>护肤热销</h2>
+						<ul class="listShow showspe">
+							<li>
+								<p>
+									<i class="fl">1</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">2</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo showspe">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">3</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">4</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<p>
+									<i class="fl">5</i>
+									<span class="fl">雅诗兰黛净莹柔肤洁面乳</span>
+								</p>
+								<div class="hufuinfo">
+									<dl>
+										<dt>
+											<a href="javascript:;">
+												<img src="images/list1.jpg" alt="" />
+											</a>
+										</dt>
+										<dd class="hufuname">
+											<a href="javascript:;">雅诗兰黛净莹柔肤洁面乳</a>
+										</dd>
+										<dd class="hufuprice">￥35</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hufuBanner">
+						<a href="javascript:;">
+							<img src="images/abrand1.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand2.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand3.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand4.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand5.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand6.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand7.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand8.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand9.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand10.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand11.jpg" alt="" />
+						</a>
+						<a href="javascript:;">
+							<img src="images/abrand12.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--美容-->
+			<div class="beauty clearfix">
+				<div class="beautyinfo fl">
+					<h2>美容资讯</h2>
+					<div class="infol fl">
+						<dl>
+							<dt>
+								<a href="javascript:;">
+									<img src="images/beauty1.png" alt="" />
+								</a>
+							</dt>
+							<dd class='title'>根据场合选择防晒指数 这些新品帮你度过夏天</dd>
+							<dd class="links">
+								很多女生在夏天最担心的一件事就是晒黑了，而这些今年春夏新出的防晒新品，...
+								<a href="javascript:;">查看更多</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="infor fr">
+						<dl class="clearfix">
+							<dt class="fl">
+								<a href="javascript:;">
+									<img src="images/beauty2.png" alt="" />
+								</a>
+							</dt>
+							<dd class="title">
+								<span>香水</span>
+								上万种香水类型 据说只有1%的人会选
+							</dd>
+							<dd class="links">
+								性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+								<a href="javascript:;">详细</a>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl">
+								<a href="javascript:;">
+									<img src="images/beauty3.png" alt="" />
+								</a>
+							</dt>
+							<dd class="title">
+								<span>护肤</span>
+								上万种香水类型 据说只有1%的人会选
+							</dd>
+							<dd class="links">
+								性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+								<a href="javascript:;">详细</a>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="fl">
+								<a href="javascript:;">
+									<img src="images/beauty4.png" alt="" />
+								</a>
+							</dt>
+							<dd class="title">
+								<span>彩妆</span>
+								上万种香水类型 据说只有1%的人会选
+							</dd>
+							<dd class="links">
+								性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈...
+								<a href="javascript:;">详细</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="beautyshare fr">
+					<h2>编辑推荐</h2>
+					<dl class="first">
+						<dt class="fr">
+							<a href="javascript:;">
+								<img src="images/edite1.jpg" alt="" />
+							</a>
+						</dt>
+						<dd class="tit">
+							<a href="javascript">AUPRES欧珀莱 男士俊士JS眼部沁凉滚珠精华液/眼霜 15ml</a>
+						</dd>
+						<dd class="links">
+							<a href="javascript:;">
+								<span>编辑推荐：</span>
+								用了这款没多久，感觉眼袋跟黑眼圈的问题缓解了不少
+							</a>
+						</dd>
+					</dl>
+					<dl class="first">
+						<dt class="fr">
+							<a href="javascript:;">
+								<img src="images/edite1.jpg" alt="" />
+							</a>
+						</dt>
+						<dd class="tit">
+							<a href="javascript">AUPRES欧珀莱 男士俊士JS眼部沁凉滚珠精华液/眼霜 15ml</a>
+						</dd>
+						<dd class="links">
+							<a href="javascript:;">
+								<span>编辑推荐：</span>
+								用了这款没多久，感觉眼袋跟黑眼圈的问题缓解了不少
+							</a>
+						</dd>
+					</dl>
+					<dl class="first">
+						<dt class="fr">
+							<a href="javascript:;">
+								<img src="images/edite1.jpg" alt="" />
+							</a>
+						</dt>
+						<dd class="tit">
+							<a href="javascript">AUPRES欧珀莱 男士俊士JS眼部沁凉滚珠精华液/眼霜 15ml</a>
+						</dd>
+						<dd class="links">
+							<a href="javascript:;">
+								<span>编辑推荐：</span>
+								用了这款没多久，感觉眼袋跟黑眼圈的问题缓解了不少
+							</a>
+						</dd>
+					</dl>
+					<dl class="first">
+						<dt class="fr">
+							<a href="javascript:;">
+								<img src="images/edite1.jpg" alt="" />
+							</a>
+						</dt>
+						<dd class="tit">
+							<a href="javascript">AUPRES欧珀莱 男士俊士JS眼部沁凉滚珠精华液/眼霜 15ml</a>
+						</dd>
+						<dd class="links">
+							<a href="javascript:;">
+								<span>编辑推荐：</span>
+								用了这款没多久，感觉眼袋跟黑眼圈的问题缓解了不少
+							</a>
+						</dd>
+					</dl>
+					
+				</div>
+			</div>
+		
 		</div>
 		
 		

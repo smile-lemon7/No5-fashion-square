@@ -64,6 +64,31 @@ requirejs(["jquery","public","countDown"],function($,obj1,cd){
 		var end = new Date("2018-04-16 16:16:00");
 		var now = new Date();
 		cd.count(end,now);
+	//特价tab栏
+	$("#saleTab").delegate("li","mouseenter",function(){
+		$("#tabArrow").css({"left":$(this).offset().left})
+		
+	})
+	
+	//护肤tab栏
+	$(".listShow").on("mouseenter","li",function(){
+		$(".listShow").find("li").find(".hufuinfo").hide();
+		$(this).find(".hufuinfo").show()
+			   .siblings().find(".hufuinfo").hide()
+	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
