@@ -29,13 +29,11 @@ requirejs(["jquery","common","extra"],function($,cm,ex){
 		$(".mask").show()
 		$(".picbig").show()
 	})
-	$(".mask").on("mouseenter",function(e){
+	$(".picmiddle").on("mouseenter",function(e){
 		var e = e || event;
-		var x = e.clientX - $(".mask").position().left - $(".picmiddle").offset().left;
-		var y = e.clientY - $(".mask").position().top -$(".picmiddle").offset().top;
-		$(document).on("mousemove",function(e){
-			var left = e.clientX - x - $(".picmiddle").offset().left ;
-			var top = e.clientY - y - $(".picmiddle").offset().top;
+		$(".picmiddle").on("mousemove",function(e){
+			var left = e.pageX - $(".mask").width()/2 - $(".picmiddle").offset().left ;
+			var top = e.pageY - $(".mask").height()/2 - $(".picmiddle").offset().top;
 			left = Math.min(Math.max(left,0), $(".picmiddle").width()-$(".mask").width());
 			top = Math.min(Math.max(top,0), $(".picmiddle").height()-$(".mask").height());
 			$(".mask").css({"left":left,"top":top,"backgroundPositionX":-left,"backgroundPositionY":-top})
@@ -45,7 +43,7 @@ requirejs(["jquery","common","extra"],function($,cm,ex){
 			
 		})
 		$(".picmiddle").on("mouseleave",function(){
-			$(document).off("mousemove");
+			$(".picmiddle").off("mousemove");
 			$(".mask").hide()
 			$(".picbig").hide()
 		})
