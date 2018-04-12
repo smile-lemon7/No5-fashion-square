@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+		<script src="js/require.js" data-main="js/register"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="headerWrap">
+			<div class="header clearfix">
+				<div class="left fl">
+					<p>晚上好，欢迎光临No5时尚广场。</p>
+					<a href="#">[登录]&ensp;</a>
+					<a href="#">[免费注册]</a>
+				</div>
+				<ul class="fr right">
+					<li class="hide">
+						<a href="#">我的账户
+							<i class="iconfont icon-xialasanjiao"></i>
+						</a>
+						<ul class="myaccount">
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的积分</a></li>
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的收藏</a></li>
+						</ul>
+						<em class="iconfont icon-vertical_line"></em>
+					</li>
+					<li>
+						<a href="#">收藏本站</a>
+						<em class="iconfont icon-vertical_line"></em><em></em>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+					<li class="phone">
+						<i class="iconfont icon-dianhua"></i>
+						010-51666655
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="top">
+			<div class="logo fl">
+				<a href="index.html">
+					<img src="images/logo.jpg" alt="" />
+				</a>
+			</div>
+			<div class="center fl">
+				<div class="search">
+					<div class="searchMask"></div>
+					<i class="delKeywords">x</i>
+					<input type="text" id="search" value="面膜"/>
+					<span class="search-btn">搜索</span>
+				</div>
+				<div class="hotKey">
+					<span>热门搜索：</span>
+					<a href="javascript:;" class="special">防敏感专用</a>
+					<a href="javascript:;">雅诗兰黛</a>
+					<a href="javascript:;">气垫bb</a>
+					<a href="javascript:;" class="special">美白</a>
+					<a href="javascript:;">专柜小样</a>
+					<a href="javascript:;">口红</a>
+					<a href="javascript:;">防晒特卖</a>
+				</div>
+				<div class="code fr">
+					<div class="mobile-menu">
+						<div class="app">
+							<strong>app下载</strong>
+							<p>
+								<a href="javascript:;" class="android"></a>
+								<a href="javascript:;" class="ios"></a>
+							</p>
+						</div>
+						<div class="gzh">
+							<strong>关注微信公众号</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shopcar fr">
+				<div class="trigger">
+					购物车
+					<span>0</span>
+					件
+				</div>
+				<ul class="shoplist">
+					<li>购物车中还没有商品，赶紧选购吧！</li>
+				</ul>
+			</div>
+		</div>
+		<!--nav-->
+		<div class="navWrap">
+			<div class="navTotal">
+				<ul class="nav">
+					<li class="bgn"><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">超值小样</a></li>
+					<li><a href="javascript:;">明星推荐</a></li>
+					<li><a href="javascript:;">最新活动</a></li>
+					<li><a href="javascript:;">新品上架</a></li>
+					<li><a href="javascript:;" class="red">本周特价</a></li>
+					<li><a href="javascript:;" class="red">清仓</a></li>
+					<li><a href="javascript:;">品牌库</a></li>
+				</ul>
+				<div class="goodList" id="subnav">
+					<span>全部商品分类</span>
+					<ul class="navSub">
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">面部护理</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">洗面奶</a>
+									<a href="javascript:;" class="active">爽肤水</a>
+									<a href="javascript:;">乳液</a>
+									<a href="javascript:;">防晒</a>
+									<a href="javascript:;">面膜</a>
+									<a href="javascript:;">精华</a>
+									<a href="javascript:;">眼霜</a>
+									<a href="javascript:;">卸妆</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">彩妆</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">洗面奶</a>
+									<a href="javascript:;" class="active">爽肤水</a>
+									<a href="javascript:;">乳液</a>
+									<a href="javascript:;">防晒</a>
+									<a href="javascript:;">面膜</a>
+									<a href="javascript:;">精华</a>
+									<a href="javascript:;">眼霜</a>
+									<a href="javascript:;">卸妆</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">BB霜</a></strong>
+										<p class="fr">
+											<a href="javascript:;">粉底液</a>
+											<a href="javascript:;">妆前乳</a>
+											<a href="javascript:;">隔离</a>
+											<a href="javascript:;">唇膏</a>
+											<a href="javascript:;">睫毛膏</a>
+											<a href="javascript:;">指甲油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">香氛</a></strong>
+										<p class="fr">
+											<a href="javascript:;">女士香水</a>
+											<a href="javascript:;">男士香水</a>
+											<a href="javascript:;">香水套装</a>
+											<a href="javascript:;">中性香水</a>
+											<a href="javascript:;">限量版</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">身体护理</a></strong>
+										<p class="fr">
+											<a href="javascript:;">香皂</a>
+											<a href="javascript:;">沐浴露</a>
+											<a href="javascript:;">身体乳</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">香氛</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">女士香水</a>
+									<a href="javascript:;" class="active">男士香水</a>
+									<a href="javascript:;">香水套装</a>
+									<a href="javascript:;">中性香水</a>
+									<a href="javascript:;">限量版</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">身体护理</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">香皂</a>
+									<a href="javascript:;" class="active">沐浴露</a>
+									<a href="javascript:;">身体乳</a>
+									<a href="javascript:;">瘦身霜</a>
+									<a href="javascript:;">脱毛膏</a>
+									<a href="javascript:;">美胸霜</a>
+									<a href="javascript:;">颈霜</a>
+									<a href="javascript:;">护手霜</a>
+								</p>
+							</div>
+								<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+							
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">头发护理</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">洗发水</a>
+									<a href="javascript:;" class="active">护发素</a>
+									<a href="javascript:;">发膜</a>
+									<a href="javascript:;">修护精华</a>
+									<a href="javascript:;">仿脱发</a>
+									<a href="javascript:;">染发</a>
+									<a href="javascript:;">套装</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">男士专区</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">面部护肤</a>
+									<a href="javascript:;" class="active">男士防嗮</a>
+									<a href="javascript:;">剃须护理</a>
+									<a href="javascript:;">洗发护发</a>
+									<a href="javascript:;">沐浴止汗</a>
+									<a href="javascript:;">男士精品</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list">
+							<div class="navSubList">
+								<strong>
+									<a href="javascript:;">美容工具</a>
+									<i class="iconfont icon-jiantou"></i>
+								</strong>
+								<p>
+									<a href="javascript:;">化妆包</a>
+									<a href="javascript:;" class="active">购物袋</a>
+									<a href="javascript:;">化妆刷</a>
+									<a href="javascript:;">彩妆工具</a>
+									<a href="javascript:;">护肤工具</a>
+									<a href="javascript:;">美体工具</a>
+								</p>
+							</div>
+							<div class="details clearfix">
+								<ul class="fl">
+									<li>
+										<strong class="fl"><a href="javascript:;">卸妆步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">卸妆油</a>
+											<a href="javascript:;">卸妆乳/霜</a>
+											<a href="javascript:;">眼唇卸妆</a>
+											<a href="javascript:;">卸妆水</a>
+											<a href="javascript:;">卸妆啫喱</a>
+											<a href="javascript:;">洁肤卸妆2合1</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">洁肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">洁面乳/膏</a>
+											<a href="javascript:;">洁面啫喱</a>
+											<a href="javascript:;">洁面慕斯</a>
+											<a href="javascript:;">洁面皂</a>
+											<a href="javascript:;">洁面粉</a>
+											<a href="javascript:;">面部去角质</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">爽肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">化妆水</a>
+											<a href="javascript:;">美容液</a>
+											<a href="javascript:;">花水/纯露</a>
+											<a href="javascript:;">喷雾</a>
+											<a href="javascript:;">化妆棉</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">精华步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">基底</a>
+											<a href="javascript:;">精华素</a>
+											<a href="javascript:;">原液</a>
+											<a href="javascript:;">精油</a>
+										</p>
+									</li>
+									<li>
+										<strong class="fl"><a href="javascript:;">润肤步骤</a></strong>
+										<p class="fr">
+											<a href="javascript:;">日间</a>
+											<a href="javascript:;">夜间</a>
+											<a href="javascript:;">乳液</a>
+											<a href="javascript:;">面霜</a>
+											<a href="javascript:;">凝霜</a>
+										</p>
+									</li>
+									<li class="spe">
+										<strong class="fl"><a href="javascript:;">日间防护</a></strong>
+										<p class="fr">
+											<a href="javascript:;">防晒霜/乳</a>
+											<a href="javascript:;">防晒液</a>
+											<a href="javascript:;">防晒喷雾</a>
+											<a href="javascript:;">晒后修护</a>
+											<a href="javascript:;">面晒美黑</a>
+										</p>
+									</li>
+								</ul>
+								<div class="recommend fl">
+									<dl class="clearfix">
+										<dt class="fl"><h4>推荐品牌</h4></dt>
+										<dd><a href="javascript:;">兰蔻</a></dd>
+										<dd><a href="javascript:;">雅诗兰黛</a></dd>
+										<dd><a href="javascript:;">俏碧</a></dd>
+										<dd><a href="javascript:;">娇韵诗</a></dd>
+										<dd><a href="javascript:;">迪奥</a></dd>
+										<dd><a href="javascript:;">碧欧泉</a></dd>
+										<dd><a href="javascript:;">兰芝</a></dd>
+										<dd><a href="javascript:;">科颜氏</a></dd>
+										<dd><a href="javascript:;">fresh</a></dd>
+										<dd><a href="javascript:;">SK-II</a></dd>
+										<dd><a href="javascript:;">可莱丝</a></dd>
+										<dd><a href="javascript:;">茉莉口</a></dd>
+										<dd><a href="javascript:;">资生堂</a></dd>
+									</dl>
+									<a href="javascript:;">
+										<img src="images/details.jpg" alt="" />
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="mainWrap">
+			<div class="main clearfix">
+				<div class="login fl">
+					<div class="loginTit"></div>
+					<div class="loginfm">
+						<p class="uname">
+							<span>用户名：</span>
+							<input type="text" id="uname"/>
+						</p>
+						<p class="psw">
+							<span>密码：</span>
+							<input type="password" id="psw"/>
+						</p>
+						<p class="yzcode">
+							<span>验证码：</span>
+							<input type="text" />
+							<i></i>
+						</p>
+						<p class="sub">
+							<a href="javascript:;"></a>
+						</p>
+					</div>
+				</div>
+				<div class="line fl"></div>
+				<div class="register fl">
+					<div class="registerTit"></div>
+					<div class="registerfm">
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+				
+			
+			
+			
+			
+			
+		<!--footer-->
+			<div class="footer clearfix">
+				<div class="ft clearfix">
+					<div class="info fl">
+						<div class="tel">
+							<p class="num">010-51666655</p>
+							<p class="time">9:00-18:00</p>
+						</div>
+						<p class="weibo">
+							新浪官方微博
+							<a href="javascript:;">
+								<img src="images/guanzhu.jpg" alt="" />
+							</a>
+						</p>
+						<p class="email">
+							<input id="email" type="text" value="请输入您的Email地址"/>
+							<a href="javascript:;">
+								<img src="images/ding.jpg" alt="" />
+							</a>
+						</p>
+						<p class="ps">最新美容资讯，新品及促销信息</p>
+					</div>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">如何订购</a>
+						</dt>
+						<dd><a href="javascript:;">网上下单</a></dd>
+						<dd><a href="javascript:;">电话订购</a></dd>
+						<dd><a href="javascript:;">邮寄订购</a></dd>
+						<dd><a href="javascript:;">传真订购</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">如何送货</a>
+						</dt>
+						<dd><a href="javascript:;">送货上门</a></dd>
+						<dd><a href="javascript:;">快递</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">如何付款</a>
+						</dt>
+						<dd><a href="javascript:;">货到付款</a></dd>
+						<dd><a href="javascript:;">在线支付</a></dd>
+						<dd><a href="javascript:;">银行汇款</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">订单查询</a>
+						</dt>
+						<dd><a href="javascript:;">订单状态</a></dd>
+						<dd><a href="javascript:;">查询订单</a></dd>
+						<dd><a href="javascript:;">无效订单</a></dd>
+						<dd><a href="javascript:;">支付失败</a></dd>
+						<dd><a href="javascript:;">缺货登记</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">会员服务</a>
+						</dt>
+						<dd><a href="javascript:;">N°5会员级别</a></dd>
+						<dd><a href="javascript:;">N°5购物保障</a></dd>
+						<dd><a href="javascript:;">N°5贴心服务</a></dd>
+						<dd><a href="javascript:;">账户积分使用</a></dd>
+					</dl>
+					<dl class="fl">
+						<dt>
+							<a href="javascript:;">联系我们</a>
+						</dt>
+						<dd><a href="javascript:;">关于N°5</a></dd>
+						<dd><a href="javascript:;">加入N°5</a></dd>
+						<dd><a href="javascript:;">团购加盟</a></dd>
+						<dd><a href="javascript:;">网站加盟</a></dd>
+						<dd><a href="javascript:;">投诉建议</a></dd>
+					</dl>
+					<div class="code fr">
+						<img src="images/qrcode-app.png" alt="" />
+					</div>
+				</div>
+				<div class="footerBottom clearfix">
+					<dl>
+						<dt><img src="images/fb1.jpg" alt="" /></dt>
+						<dd>足不出户  享受网购乐趣</dd>
+						<dd>北京城区次日送达</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/fb2.jpg" alt="" /></dt>
+						<dd>品质保证</dd>
+						<dd>15天不满意退换货</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/fb3.jpg" alt="" /></dt>
+						<dd>价格实惠  购物有积分</dd>
+						<dd>积分抵现金</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/fb4.jpg" alt="" /></dt>
+						<dd>1800多城市送货上门</dd>
+						<dd>货到付款</dd>
+					</dl>
+				</div>
+			</div>
+			<p class="about">Copyright @ 2001-2012 N°5.com.cn All Rights Reserved 京ICP备11045170号</p>
+				
+	</body>
+</html>

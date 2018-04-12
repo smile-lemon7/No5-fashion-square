@@ -1,5 +1,5 @@
 @import url(reset.css);
-.w100, .headerWrap, .navWrap, .slide .showPic, .slide .showPic .slidePic li {
+.w100, .headerWrap, .navWrap, .footer, .slide .showPic, .slide .showPic .slidePic li {
   width: 100%;
   margin: 0 auto;
 }
@@ -311,6 +311,9 @@
 .navTotal .nav li a.red {
   color: #f00;
 }
+.navTotal .goodList {
+  height: auto;
+}
 .navTotal .goodList span {
   width: 230px;
   height: 40px;
@@ -319,6 +322,7 @@
   color: #fff;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 }
 .navTotal .goodList .navSub {
   width: 230px;
@@ -430,6 +434,140 @@
   width: 100px;
   float: left;
   line-height: 22px;
+}
+
+.footer {
+  background: url(../images/footbd.jpg) repeat-x;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 30px;
+}
+.footer .ft {
+  width: 1200px;
+  height: 174px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.footer .ft .info {
+  width: 240px;
+  padding-left: 44px;
+}
+.footer .ft .info .tel {
+  width: 197px;
+  height: 49px;
+  background: url(../images/detail.gif) no-repeat 0 -157px;
+}
+.footer .ft .info .tel .num {
+  padding-left: 72px;
+  font-style: italic;
+  font-weight: 700;
+  padding-top: 8px;
+  color: #ff0;
+}
+.footer .ft .info .tel .time {
+  width: 148px;
+  color: #444;
+  text-align: right;
+}
+.footer .ft .info .weibo {
+  position: relative;
+  width: 197px;
+  height: 22px;
+  line-height: 22px;
+  background: url(../images/w.jpg) no-repeat;
+  margin-top: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer .ft .info .weibo a {
+  position: absolute;
+  top: 0;
+  left: 114px;
+}
+.footer .ft .info .email {
+  position: relative;
+}
+.footer .ft .info .email input {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #ccc;
+  height: 22px;
+}
+.footer .ft .info .email a {
+  position: absolute;
+  left: 132px;
+  top: 0;
+}
+.footer .ft .info .ps {
+  margin-top: 10px;
+}
+.footer .ft dl {
+  float: left;
+  width: 100px;
+  height: 150px;
+  padding-left: 25px;
+  border-left: 1px solid #e1e1e1;
+}
+.footer .ft dl dt {
+  margin-bottom: 14px;
+}
+.footer .ft dl dt a {
+  font-size: 13px;
+  color: #444;
+  font-weight: 700;
+}
+.footer .ft dl dd a {
+  height: 22px;
+  line-height: 22px;
+  color: #999;
+}
+.footer .ft .code {
+  width: 125px;
+  height: 150px;
+  padding-top: 11px;
+  padding-left: 33px;
+  background: url(../images/ss.jpg) no-repeat 30px 104px;
+}
+.footer .ft .code img {
+  border: 1px solid #eee;
+}
+.footer .footerBottom {
+  width: 880px;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 160px 0 160px;
+  border-bottom: 1px solid #ccc;
+}
+.footer .footerBottom dl {
+  width: 140px;
+  height: 110px;
+  margin: 15px 40px;
+  float: left;
+}
+.footer .footerBottom dl dt {
+  width: 108px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+.footer .footerBottom dl dd {
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #444;
+}
+
+.about {
+  width: 1200px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 44px;
+  color: #444;
+  font-size: 14px;
+  font-family: "microsoft yahei";
 }
 
 .slide {
@@ -1216,6 +1354,7 @@ a {
 .content .beauty .beautyshare {
   position: relative;
   width: 336px;
+  height: 470px;
   margin-top: 25px;
   background: #f9f9f9;
   border: 1px solid #e4e4e4;
@@ -1237,11 +1376,14 @@ a {
 .content .beauty .beautyshare dl {
   width: 323px;
   height: 93px;
-  margin: 0 8px;
+  margin: 11px 8px;
   border-bottom: 1px dashed #ccc;
 }
 .content .beauty .beautyshare dl.first {
   padding-top: 61px;
+}
+.content .beauty .beautyshare dl.bb0 {
+  border-bottom: none;
 }
 .content .beauty .beautyshare dl dt {
   width: 90px;
@@ -1268,7 +1410,11 @@ a {
   line-height: 18px;
   height: 38px;
 }
-.content .beauty .beautyshare dl dd.links span {
+.content .beauty .beautyshare dl dd.links a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.content .beauty .beautyshare dl dd.links a span {
   color: #f00;
   font-size: 15px;
 }

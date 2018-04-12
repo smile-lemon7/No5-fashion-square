@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "common.scss";
+
+.commonStyle {
+    width: 455px;
+    height: 453px;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+.titbg {
+   width: 439px;
+   height: 43px;
+   margin-bottom: 37px;
+}
+.navSub {
+    display: none;
+}
+
+.mainWrap {
+    width: 980px;
+    margin: 0 auto;
+    .main {
+        width: 958px;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #c6e6f3;
+        .line {
+            width: 1px;
+            height: 403px;
+            background: url(../images/line.png) no-repeat;
+        }
+        .login {
+           @extend .commonStyle;
+           .loginTit {
+               @extend .titbg;
+               background: url(../images/loginTit.png);
+           }
+           .loginfm {
+               width: 455px;
+               height: 280px;
+               p {
+                   height: 55px;
+                   margin-left: 28px;
+                   span {
+                       display: inline-block;
+                       width: 60px;
+                       height: 25px;
+                       line-height: 23px;
+                       text-align: right;
+                       font-weight: 700;
+                   }
+                   input {
+                       width: 252px;
+                       height: 30px;
+                       border: 1px solid #7f9db9;
+                   }
+                   &.yzcode {
+                        span {
+                           float: left;
+                           height: 30px;
+                           line-height: 30px;
+                           margin-right: 8px;
+                        }
+                        input {
+                           float: left;
+                           width: 98px;
+                        }
+                        i {
+                            float: left;
+                            display: inline-block;
+                            width: 92px;
+                            height: 30px;
+                            background: pink;
+                            margin-left: 20px;
+                            background: url(../images/yzmbg6.gif);
+                        }
+                   }
+                   &.sub {
+                       height: 55px;
+                       margin-left: 50px;
+                       font-weight: 700;
+                       a {
+                           display: block;
+                           height: 29px;
+                           width: 190px;
+                           margin-left: 123px;
+                           background: url(../images/btn-login.png) no-repeat;
+                       }
+                   }
+               }
+               
+               
+               
+               
+               
+               
+               
+               
+           }
+        }
+        .register {
+            @extend .commonStyle;
+            .registerTit {
+                @extend .titbg;
+                background: url(../images/registerTit.png);
+            }
+            
+        }
+    }
+}

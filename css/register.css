@@ -1,0 +1,664 @@
+@import url(reset.css);
+.w100, .headerWrap, .navWrap, .footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headerWrap {
+  background: url(../images/headbg.jpg) repeat-x;
+}
+
+.header {
+  width: 1200px;
+  height: 33px;
+  margin: 0 auto;
+  background: url(../images/headbg.jpg) repeat-x;
+  line-height: 33px;
+}
+.header .left p {
+  float: left;
+}
+.header .left a {
+  float: left;
+}
+.header .left a:hover {
+  color: #f00;
+}
+.header ul {
+  position: relative;
+}
+.header ul li {
+  position: relative;
+  padding-right: 10px;
+  float: left;
+  margin-left: 10px;
+}
+.header ul .hide {
+  position: absolute;
+  top: 0;
+  left: -96px;
+  width: 60px;
+  padding-right: 20px;
+  z-index: 10;
+}
+.header ul .hide:hover {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.header ul .hide:hover ul {
+  display: block;
+}
+.header ul .hide i {
+  position: absolute;
+  right: -16px;
+  top: -10px;
+  font-size: 12px;
+  color: #666;
+}
+.header ul .hide a {
+  position: relative;
+  padding-left: 10px;
+}
+.header ul .hide ul {
+  width: 80px;
+  height: 110px;
+  display: none;
+}
+.header ul .hide ul li {
+  margin: 0;
+  height: 25px;
+}
+.header ul .hide ul li a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.header ul .hide em {
+  right: -24px;
+}
+.header ul em {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: #ddd;
+}
+.header ul .phone {
+  color: #ff1a3a;
+  font-size: 16px;
+  padding-left: 20px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: "arial, helvetica, sans-serif";
+}
+.header ul .phone i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.top {
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+}
+.top .logo {
+  width: 320px;
+  padding: 15px 0 0 35px;
+}
+.top .center {
+  width: 650px;
+  margin-top: 22px;
+  position: relative;
+}
+.top .center .search {
+  width: 428px;
+  height: 30px;
+  border: 2px solid #02A3F0;
+  position: relative;
+}
+.top .center .search .searchMask {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: -31px;
+  background: #fff;
+  z-index: 2;
+  width: 360px;
+  height: 28px;
+  margin-top: 31px;
+  margin-left: -2px;
+  opacity: .2;
+  background: #ccc;
+  box-shadow: 3px 3px 10px #ccc;
+}
+.top .center .search .search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #02A3F0;
+  color: #fff;
+  width: 67px;
+  height: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.top .center .search input {
+  width: 341px;
+  height: 14px;
+  padding: 8px 10px;
+}
+.top .center .search i {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  width: 10px;
+  right: 70px;
+  top: 6px;
+  z-index: 3;
+  cursor: pointer;
+}
+.top .center .hotKey {
+  width: 630px;
+}
+.top .center .hotKey a {
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  padding: 4px 3px;
+}
+.top .center .hotKey a.active {
+  color: #df5000;
+  text-decoration: underline;
+}
+.top .center .hotKey a.special {
+  color: #ff1a3a;
+}
+.top .center .code {
+  position: absolute;
+  right: 66px;
+  top: -16px;
+  width: 80px;
+  height: 80px;
+  background: url(../images/qrcode-app.png) no-repeat center;
+}
+.top .center .code:hover .mobile-menu {
+  display: block;
+}
+.top .center .code .mobile-menu {
+  position: absolute;
+  border: 1px solid #999;
+  margin-left: -50px;
+  width: 180px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px #b8b8b8;
+  z-index: 10;
+  display: none;
+}
+.top .center .code .mobile-menu .app, .top .center .code .mobile-menu .gzh {
+  background: url(../images/qrcode-app.png) no-repeat left center;
+  height: 90px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 85px;
+  padding-top: 2px;
+}
+.top .center .code .mobile-menu .app strong, .top .center .code .mobile-menu .gzh strong {
+  font-weight: 700;
+}
+.top .center .code .mobile-menu .app a, .top .center .code .mobile-menu .gzh a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/mobile-system.png) no-repeat;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.top .center .code .mobile-menu .app .ios, .top .center .code .mobile-menu .gzh .ios {
+  background-position: 0 -25px;
+}
+.top .center .code .mobile-menu .gzh {
+  background: url(../images/qrcode-app.png) no-repeat left center;
+  padding-top: 13px;
+  height: 80px;
+  border: none;
+}
+.top .shopcar {
+  width: 195px;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 20px;
+  position: relative;
+}
+.top .shopcar .trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 125px;
+  height: 44px;
+  line-height: 44px;
+  background: url(../images/detail.gif) no-repeat 0px -30px;
+  padding-left: 70px;
+}
+.top .shopcar .trigger span {
+  color: #f00;
+  font-weight: 700;
+  font-family: "microsoft yahei";
+}
+.top .shopcar .shoplist {
+  position: absolute;
+  right: 0px;
+  top: 41px;
+  z-index: 1;
+  height: 42px;
+  width: 262px;
+  border: 1px solid #dbdbda;
+  background: #fff;
+  line-height: 42px;
+  padding-left: 20px;
+  display: none;
+}
+.top .shopcar:hover .trigger {
+  background: url(../images/detail.gif) no-repeat 0px -74px;
+  padding-top: 0px;
+}
+.top .shopcar:hover .shoplist {
+  display: block;
+}
+
+.navWrap {
+  background: #000;
+}
+
+.navTotal {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  background: #000;
+  position: relative;
+}
+.navTotal .nav {
+  position: absolute;
+  top: 0;
+  left: 230px;
+  width: 960px;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+.navTotal .nav li {
+  float: left;
+  padding: 0 30px;
+  background: url(../images/navlibg.jpg) no-repeat left center;
+}
+.navTotal .nav li.bgn {
+  background: none;
+}
+.navTotal .nav li a {
+  display: block;
+  color: #fff;
+}
+.navTotal .nav li a:hover {
+  color: #03afec;
+}
+.navTotal .nav li a.red {
+  color: #f00;
+}
+.navTotal .goodList {
+  height: auto;
+}
+.navTotal .goodList span {
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  background: #03afec;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.navTotal .goodList .navSub {
+  width: 230px;
+  position: relative;
+}
+.navTotal .goodList .navSub li {
+  position: relative;
+}
+.navTotal .goodList .navSub .navSubList.activeNav {
+  background: #fff;
+  width: 210px;
+  border: 1px solid #bdbdbd;
+  border-right: none;
+  border-left: 2px solid #00adff;
+  padding-left: 18px;
+  padding-top: 12px;
+  z-index: 10;
+}
+.navTotal .goodList .navSub .navSubList {
+  position: relative;
+  width: 208px;
+  line-height: 22px;
+  text-align: left;
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  padding: 11px 0px 6px 20px;
+  z-index: 10;
+}
+.navTotal .goodList .navSub .navSubList strong {
+  display: block;
+  font-size: 16px;
+  padding-top: 5px;
+  width: 210px;
+  height: 18px;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+.navTotal .goodList .navSub .navSubList strong i {
+  float: right;
+  margin-right: 12px;
+  margin-top: 0px;
+  color: #03afec;
+}
+.navTotal .goodList .navSub .navSubList p {
+  height: 44px;
+  line-height: 22px;
+}
+.navTotal .goodList .navSub .navSubList a {
+  margin-right: 13px;
+  float: left;
+}
+.navTotal .goodList .navSub .navSubList a:hover {
+  color: #03afec;
+}
+.navTotal .goodList .navSub .details {
+  position: absolute;
+  top: 0px;
+  left: 228px;
+  width: 650px;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  display: none;
+  z-index: 5;
+}
+.navTotal .goodList .navSub .details ul {
+  width: 380px;
+  padding: 0 20px;
+}
+.navTotal .goodList .navSub .details ul li {
+  width: 380px;
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+  line-height: 22px;
+  overflow: hidden;
+}
+.navTotal .goodList .navSub .details ul li.spe {
+  border: none;
+}
+.navTotal .goodList .navSub .details ul li strong {
+  width: 70px;
+}
+.navTotal .goodList .navSub .details ul li strong a {
+  font-size: 12px;
+}
+.navTotal .goodList .navSub .details ul li p {
+  width: 310px;
+}
+.navTotal .goodList .navSub .details .recommend {
+  width: 200px;
+  background: #f8f8f8;
+  padding: 15px;
+}
+.navTotal .goodList .navSub .details .recommend dl {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.navTotal .goodList .navSub .details .recommend dl dt {
+  width: 200px;
+}
+.navTotal .goodList .navSub .details .recommend dl dt h4 {
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.navTotal .goodList .navSub .details .recommend dl dd {
+  width: 100px;
+  float: left;
+  line-height: 22px;
+}
+
+.footer {
+  background: url(../images/footbd.jpg) repeat-x;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 30px;
+}
+.footer .ft {
+  width: 1200px;
+  height: 174px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.footer .ft .info {
+  width: 240px;
+  padding-left: 44px;
+}
+.footer .ft .info .tel {
+  width: 197px;
+  height: 49px;
+  background: url(../images/detail.gif) no-repeat 0 -157px;
+}
+.footer .ft .info .tel .num {
+  padding-left: 72px;
+  font-style: italic;
+  font-weight: 700;
+  padding-top: 8px;
+  color: #ff0;
+}
+.footer .ft .info .tel .time {
+  width: 148px;
+  color: #444;
+  text-align: right;
+}
+.footer .ft .info .weibo {
+  position: relative;
+  width: 197px;
+  height: 22px;
+  line-height: 22px;
+  background: url(../images/w.jpg) no-repeat;
+  margin-top: 10px;
+  padding-left: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer .ft .info .weibo a {
+  position: absolute;
+  top: 0;
+  left: 114px;
+}
+.footer .ft .info .email {
+  position: relative;
+}
+.footer .ft .info .email input {
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #ccc;
+  height: 22px;
+}
+.footer .ft .info .email a {
+  position: absolute;
+  left: 132px;
+  top: 0;
+}
+.footer .ft .info .ps {
+  margin-top: 10px;
+}
+.footer .ft dl {
+  float: left;
+  width: 100px;
+  height: 150px;
+  padding-left: 25px;
+  border-left: 1px solid #e1e1e1;
+}
+.footer .ft dl dt {
+  margin-bottom: 14px;
+}
+.footer .ft dl dt a {
+  font-size: 13px;
+  color: #444;
+  font-weight: 700;
+}
+.footer .ft dl dd a {
+  height: 22px;
+  line-height: 22px;
+  color: #999;
+}
+.footer .ft .code {
+  width: 125px;
+  height: 150px;
+  padding-top: 11px;
+  padding-left: 33px;
+  background: url(../images/ss.jpg) no-repeat 30px 104px;
+}
+.footer .ft .code img {
+  border: 1px solid #eee;
+}
+.footer .footerBottom {
+  width: 880px;
+  height: 130px;
+  margin: 0 auto;
+  padding: 0 160px 0 160px;
+  border-bottom: 1px solid #ccc;
+}
+.footer .footerBottom dl {
+  width: 140px;
+  height: 110px;
+  margin: 15px 40px;
+  float: left;
+}
+.footer .footerBottom dl dt {
+  width: 108px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+.footer .footerBottom dl dd {
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #444;
+}
+
+.about {
+  width: 1200px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 44px;
+  color: #444;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+}
+
+.commonStyle, .mainWrap .main .login, .mainWrap .main .register {
+  width: 455px;
+  height: 453px;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.titbg, .mainWrap .main .login .loginTit, .mainWrap .main .register .registerTit {
+  width: 439px;
+  height: 43px;
+  margin-bottom: 37px;
+}
+
+.navSub {
+  display: none;
+}
+
+.mainWrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.mainWrap .main {
+  width: 958px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #c6e6f3;
+}
+.mainWrap .main .line {
+  width: 1px;
+  height: 403px;
+  background: url(../images/line.png) no-repeat;
+}
+.mainWrap .main .login .loginTit {
+  background: url(../images/loginTit.png);
+}
+.mainWrap .main .login .loginfm {
+  width: 455px;
+  height: 280px;
+}
+.mainWrap .main .login .loginfm p {
+  height: 55px;
+  margin-left: 28px;
+}
+.mainWrap .main .login .loginfm p span {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 23px;
+  text-align: right;
+  font-weight: 700;
+}
+.mainWrap .main .login .loginfm p input {
+  width: 252px;
+  height: 30px;
+  border: 1px solid #7f9db9;
+}
+.mainWrap .main .login .loginfm p.yzcode span {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+}
+.mainWrap .main .login .loginfm p.yzcode input {
+  float: left;
+  width: 98px;
+}
+.mainWrap .main .login .loginfm p.yzcode i {
+  float: left;
+  display: inline-block;
+  width: 92px;
+  height: 30px;
+  background: pink;
+  margin-left: 20px;
+  background: url(../images/yzmbg6.gif);
+}
+.mainWrap .main .login .loginfm p.sub {
+  height: 55px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+.mainWrap .main .login .loginfm p.sub a {
+  display: block;
+  height: 29px;
+  width: 190px;
+  margin-left: 123px;
+  background: url(../images/btn-login.png) no-repeat;
+}
+.mainWrap .main .register .registerTit {
+  background: url(../images/registerTit.png);
+}
+
+/*# sourceMappingURL=register.css.map */

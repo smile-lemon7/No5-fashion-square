@@ -2,11 +2,12 @@ requirejs.config({
 	paths:{
 		"jquery":"jquery-1.11.1.min",
 		"public":"public",
-		"countDown": "countDown"
+		"countDown": "countDown",
+		"common": "common"
 	}
 })
 
-requirejs(["jquery","public","countDown"],function($,obj1,cd){
+requirejs(["jquery","public","countDown","common"],function($,obj1,cd,cm){
 	//搜索
 	$(".search").mouseenter(function(){
 		$(".searchMask").show().css("cursor","text");
@@ -25,21 +26,7 @@ requirejs(["jquery","public","countDown"],function($,obj1,cd){
 	})
 	
 	//subnav
-	$(".navSub").on("mouseenter",".list",function(){
-		$(this).find(".navSubList").addClass("activeNav")
-		.siblings().css({"top": -$(this).index() *30+10})
-		.show()
-		.end()
-		.parent("li").siblings().find(".navSubList").removeClass("activeNav")
-		.removeClass("activeNav")
-		.siblings()
-		.hide()
-	}).on("mouseleave",".list",function(){
-		$(this).find(".navSubList").removeClass("activeNav")
-		.siblings()
-		.hide()
-		
-	})
+	cm.navShow();
 	
 	//轮播图
 	var timer = setInterval(autoplay,2000);
@@ -77,7 +64,12 @@ requirejs(["jquery","public","countDown"],function($,obj1,cd){
 			   .siblings().find(".hufuinfo").hide()
 	})
 	
-	
+	//尾部
+	$("#email").focus(function(){
+		this.value = "";
+	}).blur(function(){
+		$(this).val("请输入您的Email地址")
+	})
 	
 	
 	
