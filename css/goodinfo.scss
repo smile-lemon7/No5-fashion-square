@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import "common.scss";
+
+.navSub {
+    display: none;
+}
+.w980 {
+    width: 980px;
+}
+.mainWrap {
+    @extend .w100;
+    .main {
+        @extend .w980;
+        margin: 10px auto;
+        margin-top: 0;
+        .current {
+            height: 34px;
+            margin-top: 15px;
+            line-height: 34px;
+            color: #999;
+            border-bottom: 2px solid #78b5f4;
+            i {
+                display: inline-block;
+                margin: 0 3px;
+                font-size: 12px;
+            }
+            a:hover {
+                color: #f00;
+            }
+            .gdname {
+                color: #4e7fc2;
+            }
+        }
+        .part1 {
+            position: relative;
+            margin-top: 15px;
+            .part1_l {
+                width: 457px;
+                .picsmall {
+                    width: 72px;
+                    height: 380px;
+                    li {
+                        width: 72px;
+                        height: 72px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                        img {
+                            width: 70px;
+                            height: 70px;
+                            border: 1px solid #e4e4e4;
+                            &.bdblue {
+                                border: 1px solid #78b5f4;
+                            }
+                        }
+                    }
+                }
+                .picmiddle {
+                    position: relative;
+                    width: 350px;
+                    height: 350px;
+                    margin: 0 15px 0 85px;
+                    border: 1px solid #000;
+                    cursor: move;
+                    img {
+                        width: 350px;
+                        height: 350px;
+                        display: none;
+                        &.piccurrent {
+                            display: block;
+                        }
+                    }
+                    .maskbg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 350px;
+                        height: 350px;
+                        background: #eaffff;
+                        opacity: .3;
+                        display: none;
+                    }
+                    .mask {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 170px;
+                        height: 170px;
+                        border: 1px solid #0069ce;
+                        background: url(../images/goodimages/middle0.jpg) no-repeat 0 0;
+                        display: none;
+                    }
+                }
+                .picbig {
+                    position: absolute;
+                    left: 436px;
+                    top: 0;
+                    width: 391px;
+                    height: 389px;
+                    border: 1px solid #c5c5c5;
+                    background: url(../images/goodimages/big0.jpg) no-repeat;
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

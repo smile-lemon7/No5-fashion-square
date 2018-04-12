@@ -1,5 +1,5 @@
 @import url(reset.css);
-.w100, .headerWrap, .navWrap, .footer {
+.w100, .headerWrap, .navWrap, .footer, .mainWrap {
   width: 100%;
   margin: 0 auto;
 }
@@ -570,204 +570,106 @@
   font-family: "microsoft yahei";
 }
 
-.commonStyle, .mainWrap .main .login, .mainWrap .main .register {
-  width: 455px;
-  height: 453px;
-  margin-top: 40px;
-  padding: 0 10px;
-}
-
-.titbg, .mainWrap .main .login .loginTit, .mainWrap .main .register .registerTit {
-  width: 439px;
-  height: 43px;
-  margin-bottom: 37px;
-}
-
 .navSub {
   display: none;
 }
 
-input {
-  width: 242px;
-  height: 30px;
-  border: 1px solid #7f9db9;
-  padding-left: 10px;
-}
-
-p.yzcode span {
-  float: left;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 8px;
-}
-p.yzcode input {
-  float: left;
-  width: 98px;
-}
-p.yzcode i {
-  float: left;
-  display: inline-block;
-  width: 92px;
-  height: 30px;
-  background: pink;
-  margin-left: 20px;
-  background: url(../images/yzmbg6.gif);
-}
-
-p.sub {
-  height: 55px;
-  margin-left: 50px;
-  font-weight: 700;
-}
-p.sub a {
-  display: block;
-  height: 29px;
-  width: 190px;
-  margin-left: 123px;
-  background: url(../images/btn-login.png) no-repeat;
-}
-
-.mainWrap {
+.w980, .mainWrap .main {
   width: 980px;
-  margin: 0 auto;
-}
-.mainWrap .main {
-  width: 958px;
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #c6e6f3;
-}
-.mainWrap .main .line {
-  width: 1px;
-  height: 403px;
-  background: url(../images/line.png) no-repeat;
-}
-.mainWrap .main .login .loginTit {
-  background: url(../images/loginTit.png);
-}
-.mainWrap .main .login .loginfm {
-  width: 455px;
-  height: 280px;
-}
-.mainWrap .main .login .loginfm p {
-  height: 55px;
-  margin-left: 28px;
-}
-.mainWrap .main .login .loginfm p span {
-  display: inline-block;
-  width: 60px;
-  height: 25px;
-  line-height: 23px;
-  text-align: right;
-  font-weight: 700;
-}
-.mainWrap .main .login .loginfm p.yzcode {
-  position: relative;
-}
-.mainWrap .main .login .loginfm p.yzcode input {
-  width: 98px;
-}
-.mainWrap .main .login .loginfm p.yzcode i {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
-}
-.mainWrap .main .login .loginfm p.yzcode a#loginrecode {
-  text-decoration: underline;
-  color: deepskyblue;
-  line-height: 30px;
-  margin-left: 20px;
-}
-.mainWrap .main .login .loginfm p.yzcode em.tsinfo {
-  position: absolute;
-  left: 65px;
-  top: 42px;
-}
-.mainWrap .main .login .loginfm p.sub {
-  margin-top: 20px;
-}
-.mainWrap .main .login .loginfm .tishi {
-  width: 100%;
-  margin-left: 50px;
-}
-.mainWrap .main .login .loginfm .tishi p {
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  color: #666;
-}
-.mainWrap .main .login .loginfm .tishi p a {
-  display: block;
-  float: left;
-  margin-right: 6px;
-}
-.mainWrap .main .register .registerTit {
-  background: url(../images/registerTit.png);
-}
-.mainWrap .main .register .registerfm {
-  width: 455px;
-  height: 559px;
-}
-.mainWrap .main .register .registerfm p {
-  margin-left: 50px;
-  height: 57px;
-}
-.mainWrap .main .register .registerfm p span {
-  display: inline-block;
-  width: 70px;
-  height: 25px;
-  line-height: 23px;
-  text-align: right;
-  font-weight: 700;
-}
-.mainWrap .main .register .registerfm p .tips {
-  height: 25px;
-  line-height: 25px;
-  font-size: 12px;
-  width: 250px;
-  margin-left: 90px;
-  font-weight: 700;
-}
-.mainWrap .main .register .registerfm p input {
-  margin-left: 10px;
-  border: 1px solid #ccc;
-}
-.mainWrap .main .register .registerfm p.yzcode input {
-  width: 98px;
-}
-.mainWrap .main .register .registerfm p.yzcode i {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
-}
-.mainWrap .main .register .registerfm p.yzcode a#recode {
-  text-decoration: underline;
-  color: deepskyblue;
-  line-height: 30px;
-  margin-left: 20px;
-}
-.mainWrap .main .register .registerfm p.yzcode em {
-  float: left;
-}
-.mainWrap .main .register .registerfm p.rule {
-  margin-left: 128px;
-  height: 35px;
-}
-.mainWrap .main .register .registerfm p.rule #ck {
-  width: 16px;
-  height: 16px;
-  float: left;
-}
-.mainWrap .main .register .registerfm p.rule span {
-  display: block;
-  float: left;
-  margin-top: -4px;
-  width: 232px;
-  color: #03AFEC;
-  font-size: 12px;
-}
-.mainWrap .main .register .registerfm p.sub a {
-  background-image: url(../images/reg.png);
 }
 
-/*# sourceMappingURL=register.css.map */
+.mainWrap .main {
+  margin: 10px auto;
+  margin-top: 0;
+}
+.mainWrap .main .current {
+  height: 34px;
+  margin-top: 15px;
+  line-height: 34px;
+  color: #999;
+  border-bottom: 2px solid #78b5f4;
+}
+.mainWrap .main .current i {
+  display: inline-block;
+  margin: 0 3px;
+  font-size: 12px;
+}
+.mainWrap .main .current a:hover {
+  color: #f00;
+}
+.mainWrap .main .current .gdname {
+  color: #4e7fc2;
+}
+.mainWrap .main .part1 {
+  position: relative;
+  margin-top: 15px;
+}
+.mainWrap .main .part1 .part1_l {
+  width: 457px;
+}
+.mainWrap .main .part1 .part1_l .picsmall {
+  width: 72px;
+  height: 380px;
+}
+.mainWrap .main .part1 .part1_l .picsmall li {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.mainWrap .main .part1 .part1_l .picsmall li img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e4e4e4;
+}
+.mainWrap .main .part1 .part1_l .picsmall li img.bdblue {
+  border: 1px solid #78b5f4;
+}
+.mainWrap .main .part1 .part1_l .picmiddle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 0 15px 0 85px;
+  border: 1px solid #000;
+  cursor: move;
+}
+.mainWrap .main .part1 .part1_l .picmiddle img {
+  width: 350px;
+  height: 350px;
+  display: none;
+}
+.mainWrap .main .part1 .part1_l .picmiddle img.piccurrent {
+  display: block;
+}
+.mainWrap .main .part1 .part1_l .picmiddle .maskbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  background: #eaffff;
+  opacity: .3;
+  display: none;
+}
+.mainWrap .main .part1 .part1_l .picmiddle .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #0069ce;
+  background: url(../images/goodimages/middle0.jpg) no-repeat 0 0;
+  display: none;
+}
+.mainWrap .main .part1 .part1_l .picbig {
+  position: absolute;
+  left: 436px;
+  top: 0;
+  width: 391px;
+  height: 389px;
+  border: 1px solid #c5c5c5;
+  background: url(../images/goodimages/big0.jpg) no-repeat;
+  display: none;
+}
+
+/*# sourceMappingURL=goodinfo.css.map */
