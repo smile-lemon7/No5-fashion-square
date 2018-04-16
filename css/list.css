@@ -567,4 +567,412 @@
   font-family: "microsoft yahei";
 }
 
-/*# sourceMappingURL=common.css.map */
+#subnav {
+  position: relative;
+  z-index: 1000;
+}
+
+.navSub {
+  display: none;
+}
+
+.mainWrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mainWrap .main {
+  width: 1200px;
+}
+.mainWrap .main .current {
+  height: 34px;
+  line-height: 34px;
+  margin-top: 15px;
+  color: #999;
+}
+.mainWrap .main .current i {
+  margin: 0 10px;
+}
+.mainWrap .main .current span {
+  color: #4e7fc2;
+}
+.mainWrap .main .conLeft {
+  width: 230px;
+}
+.mainWrap .main .conLeft .left-catnav {
+  width: 228px;
+  color: #333;
+  border: 1px solid #e4e4e4;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist h3 {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  font-size: 13px;
+  background: url(../images/list/h3bg.jpg) repeat-x;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist h3 .close {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 10px 10px 0 12px;
+  background: url(../images/detail.gif) no-repeat 0px -248px;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist h3 .count {
+  color: #999;
+  margin-left: 2px;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist ul {
+  display: none;
+  width: 154px;
+  padding: 8px 37px;
+  border-bottom: 1px solid #e4e4e4;
+  background: #fff;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist ul li {
+  line-height: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist ul li span {
+  color: #999;
+  margin-left: 2px;
+}
+.mainWrap .main .conLeft .left-catnav .week-ranklist ul li a:hover {
+  color: #f00;
+}
+.mainWrap .main .conLeft .left-catnav .box {
+  width: 228px;
+  border: 1px solid #e4e4e4;
+  margin-top: 10px;
+}
+.mainWrap .main .conLeft .left-catnav .box .tit {
+  width: 226px;
+  height: 33px;
+  line-height: 33px;
+  margin: 1px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #e4e4e4;
+  background: url(../images/list/h3bg.jpg) repeat-x;
+}
+.mainWrap .main .conLeft .left-catnav .box .good {
+  width: 208px;
+  height: 82px;
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 1px dashed #e4e4e4;
+}
+.mainWrap .main .conLeft .left-catnav .box .good.goodbd0 {
+  border-bottom: none;
+}
+.mainWrap .main .conLeft .left-catnav .box .good .timg {
+  width: 100px;
+  height: 82px;
+}
+.mainWrap .main .conLeft .left-catnav .box .good .timg img {
+  width: 82px;
+  height: 82px;
+}
+.mainWrap .main .conLeft .left-catnav .box .good .ttext {
+  width: 102px;
+  padding-top: 15px;
+}
+.mainWrap .main .conLeft .left-catnav .box .good .ttext .gname {
+  height: 30px;
+  line-height: 16px;
+  overflow: hidden;
+  text-align: left;
+}
+.mainWrap .main .conLeft .left-catnav .box .good .ttext .gprice {
+  text-align: right;
+  margin-top: 8px;
+  color: #f00;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.mainWrap .main .conRight {
+  width: 960px;
+  font-family: "microsoft yahei";
+}
+.mainWrap .main .conRight .select {
+  width: 914px;
+  margin-left: 20px;
+  border: 3px solid #f4f4f4;
+  padding: 20px;
+}
+.mainWrap .main .conRight .select dl {
+  width: 914px;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 3px 0;
+}
+.mainWrap .main .conRight .select dl dt {
+  width: 70px;
+  line-height: 24px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 15px;
+}
+.mainWrap .main .conRight .select dl dd {
+  width: 830px;
+  color: #005ea7;
+  font-size: 14px;
+}
+.mainWrap .main .conRight .select dl dd .more {
+  width: 50px;
+  height: 20px;
+  padding-left: 10px;
+  line-height: 20px;
+  border: 1px solid #e0dee0;
+  border-radius: 2px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+.mainWrap .main .conRight .select dl dd .zm {
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  float: left;
+  border-bottom: 1px solid #fff;
+  margin-right: 3px;
+  padding: 0 10px;
+  color: #0066cc;
+  cursor: pointer;
+}
+.mainWrap .main .conRight .select dl dd .zm.zmDef {
+  background: #02a3f0;
+  color: #fff;
+}
+.mainWrap .main .conRight .select dl dd .zm.zmDef b {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-style: solid dashed dashed;
+  border-color: #02a3f0 transparent transparent;
+  margin-left: -5px;
+}
+.mainWrap .main .conRight .select dl dd .brands {
+  width: 750px;
+  margin-top: 20px;
+  padding: 10px 106px;
+  padding-bottom: 4px;
+}
+.mainWrap .main .conRight .select dl dd .brands p {
+  width: 125px;
+  height: 20px;
+  padding-top: 4px;
+  margin-left: 20px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+.mainWrap .main .conRight .select dl dd .brands p a:hover {
+  color: #f00;
+}
+.mainWrap .main .conRight .select .lastdl {
+  width: 914px;
+  padding: 3px 0;
+  border-bottom: none;
+}
+.mainWrap .main .conRight .select .lastdl dt {
+  width: 70px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+.mainWrap .main .conRight .select .lastdl dd {
+  width: 830px;
+  color: #005ea7;
+}
+.mainWrap .main .conRight .select .lastdl dd .zm {
+  height: 24px;
+  line-height: 24px;
+  float: left;
+  border-bottom: 1px solid #fff;
+  margin-right: 3px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.mainWrap .main .conRight .select .lastdl dd .zm a {
+  color: #0066cc;
+}
+.mainWrap .main .conRight .select .lastdl dd .abox {
+  height: 20px;
+  background: #02A3F0;
+  margin-right: 16px;
+  line-height: 20px;
+  margin-top: 1px;
+  padding: 0 4px;
+}
+.mainWrap .main .conRight .select .lastdl dd .abox a {
+  color: #fff;
+}
+.mainWrap .main .conRight .filter {
+  width: 938px;
+  height: 26px;
+  margin-top: 10px;
+  border-top: 2px solid #15ade0;
+  margin-left: 20px;
+  padding: 5px 10px;
+  background: url(../images/list/filbg.jpg) repeat-x;
+}
+.mainWrap .main .conRight .filter dl {
+  line-height: 26px;
+}
+.mainWrap .main .conRight .filter dl dd {
+  float: left;
+  height: 24px;
+  margin-right: 5px;
+  line-height: 24px;
+  padding: 0 10px;
+  border: 1px solid #e4e4e4;
+}
+.mainWrap .main .conRight .filter dl dd.cur {
+  background: #f00;
+  border: 1px solid #f00;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+}
+.mainWrap .main .conRight .filter dl dd.cur a {
+  color: #fff;
+}
+.mainWrap .main .conRight .filter .page {
+  height: 26px;
+  border-left: 1px solid #e7e3e7;
+}
+.mainWrap .main .conRight .filter .page .mb {
+  padding: 4px 11px;
+  border: none;
+}
+.mainWrap .main .conRight .filter .page .mb i {
+  color: #f00;
+  font-weight: 700;
+}
+.mainWrap .main .conRight .filter .page .prebtn {
+  color: #ccc;
+  padding-left: 12px;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  margin-left: 2px;
+  border-radius: 3px;
+  background: #f8f8f8;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.mainWrap .main .conRight .filter .page a {
+  display: block;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 2px;
+  color: #005aa0;
+  background: #f8f8f8;
+  float: left;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  margin-left: 2px;
+  border-radius: 3px;
+}
+.mainWrap .main .conRight .filter .total {
+  height: 22px;
+  padding: 2px 15px 2px 0;
+  line-height: 22px;
+}
+.mainWrap .main .conRight .filter .total .cplist {
+  width: 960px;
+  margin: 10px auto;
+}
+.mainWrap .main .conRight .cplist dl {
+  float: left;
+  width: 214px;
+  padding: 13px;
+  background: #fff;
+}
+.mainWrap .main .conRight .cplist dl dt {
+  width: 200px;
+  height: 200px;
+  padding: 7px;
+  background: #fff;
+}
+.mainWrap .main .conRight .cplist dl dt img {
+  width: 200px;
+  height: 200px;
+}
+.mainWrap .main .conRight .cplist dl dd.pro-name {
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.mainWrap .main .conRight .cplist dl dd.pro-name a {
+  color: #666;
+}
+.mainWrap .main .conRight .cplist dl dd.pro-name a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+.mainWrap .main .conRight .cplist dl dd.pro-price {
+  margin: 10px 0 8px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f00;
+}
+.mainWrap .main .conRight .cplist dl dd.pro-price .price {
+  font-size: 16px;
+}
+.mainWrap .main .conRight .cplist dl dd.buybtn a {
+  display: block;
+  padding: 0 15px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  text-align: center;
+}
+.mainWrap .main .conRight .cplist dl dd.buybtn a.add {
+  background: #f00;
+  color: #fff;
+}
+.mainWrap .main .conRight .cplist dl dd.buybtn a.shouc {
+  background: #efefef;
+  color: #666;
+  margin-left: 10px;
+  border: 1px solid #dfdfdf;
+  height: 22px;
+  line-height: 22px;
+}
+.mainWrap .main .conRight #pageBelow {
+  width: 960px;
+  margin-top: 60px;
+}
+.mainWrap .main .conRight #pageBelow .pageBelow {
+  width: 132px;
+  float: right;
+}
+.mainWrap .main .conRight #pageBelow .pageBelow a {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #f8f8f8;
+  padding: 1px 10px;
+  margin-left: 2px;
+  line-height: 30px;
+}
+.mainWrap .main .conRight #pageBelow .pageBelow a.pagecurrent {
+  border: 1px solid #02a3f0;
+  font-weight: 700;
+  background: #02a3f0;
+  color: #fff;
+}
+
+/*# sourceMappingURL=list.css.map */

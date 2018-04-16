@@ -6,16 +6,8 @@ requirejs.config({
 	}                                                                                         
 })
 requirejs(["jquery","common","extra"],function($,cm,ex){
-	$("#subnav").mouseenter(function(){
-		$(".navSub").slideDown(500,function(){
-			cm.navShow();
-		})
-	}).mouseleave(function(){
-		cm.navShow();
-		$(this).find(".navSub")
-		.slideUp(500)
-	})
-	
+	//侧边导航
+	cm.navShow( $("#subBtn"),$(".navSub") );
 	//放大镜
 	$(".picsmall").on("mouseenter","li",function(){
 		$(this).find("img").addClass("bdblue")
@@ -50,9 +42,21 @@ requirejs(["jquery","common","extra"],function($,cm,ex){
 		return false;
 	}).bind(this)
 	
-	
-	
-	
+	//吸顶
+	$("#tabBar").on("mouseover","li",function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+	$(document).ready(function(){
+		var top = $("#tabBar").offset().top;
+		$(window).scroll(function(){
+			if( $(window).scrollTop()<top ){
+				$("#tabBar").css({"position":"static"})
+			}else{
+				$("#tabBar").css({"position":"fixed","top":"0px"})
+			}
+			
+		})
+	})
 	
 	
 	

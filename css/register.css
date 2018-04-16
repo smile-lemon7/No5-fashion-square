@@ -311,9 +311,6 @@
 .navTotal .nav li a.red {
   color: #f00;
 }
-.navTotal .goodList {
-  height: auto;
-}
 .navTotal .goodList span {
   width: 230px;
   height: 40px;

@@ -26,8 +26,7 @@ requirejs(["jquery","public","countDown","common"],function($,obj1,cd,cm){
 	})
 	
 	//subnav
-	cm.navShow();
-	
+	cm.indexNavShow( $(".navSub") );
 	//轮播图
 	var timer = setInterval(autoplay,2000);
 	var index = 0;

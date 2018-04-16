@@ -157,6 +157,7 @@
             }
             .part1_r {
                 width: 503px;
+                font-family: "microsoft yahei";
                 h2:  {
                     padding: 10px;
                     font-size: 16px;
@@ -244,6 +245,410 @@
 
                 }
             }
+            
+        }
+        .conLine {
+            @extend .w100;
+            border: 1px solid #e4e4e4;
+        }
+        .part2 {
+            @extend .w980;
+            margin-top: 15px;
+            position: relative;
+            font-family: "microsoft yahei";
+            .titbg {
+                width: 196px;
+                height: 33px;
+                line-height: 33px;
+                margin: 1px;
+                color:#333;
+                text-align: center;
+                font-weight: 700;
+                font-size: 15px;
+                border-bottom: 1px solid #e4e4e4;
+                background: url(../images/goodimages/part2lbg.jpg) repeat-x;
+            }
+            .part2L {
+                width: 200px;
+                dl {
+                    width: 198px;
+                    border: 1px solid #e4e4e4;
+                    margin-bottom: 10px;
+                   
+                    dd {
+                        padding-bottom: 10px;
+                        text-align: center;
+                        border-bottom: 1px dashed #e4e4e4;
+                        &.bb0 {
+                            border-bottom: none;
+                        }
+                        .imgbox {
+                            display: block;
+                            width: 100px;
+                            height: 100px;
+                            margin: 10px auto;
+                            img {
+                                margin-left: -14px;
+                            }
+                        }
+                        .txt {
+                            width: 176px;
+                            line-height: 16px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            margin: 0 auto;
+                            .goodname {
+                                text-align: center;
+                            }
+                            .goodprice {
+                                display: block;
+                                color: #f00;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &.newslist {
+                        dd {
+                            text-align: left;
+                            overflow: hidden;
+                            white-space: noWrap;
+                            text-overflow: ellipsis;
+                            padding-bottom: 0;
+                            line-height: 30px;
+                        }
+                    }
+                    
+                }
+            }
+            .part2R {
+                width: 765px;
+                .groupBox {
+                    width: 763px;
+                    margin-bottom: 15px;
+                    padding-bottom: 13px;
+                    border: 1px solid #e4e4e4;
+                    .tit {
+                        width: 740px;
+                        padding-left: 21px;
+                        .more {
+                            float: right;
+                            margin-right: 20px;
+                            label {
+                                display: inline-block;
+                                margin-left: 10px;
+                                color: #f00;
+                                text-decoration: underline;
+                                cursor: pointer;
+                                font-size: 13px;
+                                font-weight: 100;
+                                &.btnDis {
+                                    color: #000;
+                                    font-weight: 700;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .goodBox {
+                        float: left;
+                        width: 120px;
+                        height: 175px;
+                        margin: 8px 7px 8px 5px;
+                        &.firstbox {
+                            text-align: center;
+                            margin: 27px 3px 5px 15px;
+                        }
+                        dd {
+                            line-height: 18px;
+                            &.goodimg {
+                                margin-bottom: 10px;
+                            }
+                            &.goodname {
+                                width: 120px;
+                                height: 36px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            &.goodprice {
+                                top: 2px;
+                                color: #f00;
+                            }
+                        }
+                    }
+                    .goodAdd {
+                        width: 24px;
+                        height: 24px;
+                        margin: 89px 15px 0 0;
+                        background: url(../images/goodimages/btnGroup.gif) no-repeat 0px -330px;
+                        
+                    }
+                    .goodImg {
+                        position: relative;
+                        width: 446px;
+                        height: 185px;
+                        margin-top: 16px;
+                        border: 1px solid #f5debc;
+                        span {
+                            position: absolute;
+                            width: 13px;
+                            height: 20px;
+                            top: 73px;
+                            left: 9px;
+                            background: url(../images/goodimages/btnGroup.gif) no-repeat -50px -330px;
+                            &.btnR {
+                                left: 426px;
+                                background-position: -70px -330px;
+                            }    
+                        }
+                        #groupImg {
+                            height: 150px;
+                            position: absolute;
+                            width: 132px;
+                            left: 8px;
+                            .groupImgCon {
+                                margin-top: 0;
+                                dd {
+                                    overflow: inherit;
+                                    text-overflow: inherit;
+                                    white-space:normal;
+                                    a:hover {
+                                        color: #f00;
+                                    }
+                                    &.goodprice {
+                                        margin-left: 20px;
+                                        input {
+                                            margin-top: 2px;
+                                            margin-right: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .goodPrice {
+                        width: 137px;
+                        padding-top: 45px;
+                        p {
+                            line-height: 28px;
+                        }
+                        .redtext {
+                            color: #f00;
+                        }
+                        #grpSel {
+                            text-align: center;
+                        }
+                        #grpSum,#grpCnt {
+                            padding-left: 12px;
+                            line-height: 28px;
+                        }
+                        input {
+                            width: 110px;
+                            height: 33px;
+                            margin-top: 10px;
+                            margin-left: 12px;
+                            background: url(../images/goodimages/btnGroup.gif) no-repeat 0px -127px;
+                            cursor: pointer;
+                        }
+                        #tips {
+                            text-align: center;
+                            margin-top: 5px;
+                            color: #f00;
+                            display: none;
+                        }
+                    }
+                }
+            }
+            #tabBar {
+                width: 765px;
+                height: 34px;
+                border-bottom: 1px solid #78b5f4;
+                font-size: 15px;
+                font-weight: 700px;
+                color: #333;
+                .addshopcar {
+                    width: 116px;
+                    height: 30px;
+                    margin-top: 2px;
+                    margin-right: 2px;
+                    button {
+                        width: 116px;
+                        height: 30px;
+                        background: url(../images/goodimages/btnGroup.gif) no-repeat 0px -354px;
+                    }
+                }
+                ul {
+                    li {
+                        float: left;
+                        width: 140px;
+                        height: 34px;
+                        line-height: 34px;
+                        font-weight: 700;
+                        text-align: center;
+                        background: url(../images/goodimages/tabsbg.jpg) no-repeat;
+                        &.active {
+                             background: url(../images/goodimages/btnGroup.gif) no-repeat 0px -262px;
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .conTwo {
+                padding-top: 10px;
+                line-height: 24px;
+                .expImg {
+                    width: 765px;
+                    padding-bottom: 8px;
+                    img {
+                        width: 765px;
+                    }
+                }
+                .expText {
+                    width: 750px;
+                    padding: 0 7px 0 8px;
+                    h3 {
+                        width: 734px;
+                        padding-left: 15px;
+                        padding-top: 15px;
+                        font-size: 15px;
+                        line-height: 32px;
+                        color: #333;
+                        background: url(../images/goodimages/hs_bg.jpg) no-repeat center bottom;
+                        .deTxt {
+                            color: #aeaeae;
+                            margin-left: 8px;
+                            font-size: 14px
+                        }
+                    }
+                    .conDetail {
+                        width: 345px;
+                        float: left;
+                        line-height: 24px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding: 0 15px;
+                    }
+                    .dItmBox {
+                        width: 750px;
+                        height: 336px;
+                        img {
+                            float: left;
+                        }
+                        .con {
+                            width: 412px;
+                            height: 332px;
+                            padding-top: 100px;
+                            p {
+                                font-size: 12px;
+                                line-height: 30px;
+                                &.red {
+                                    color: #f00;
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                    .picBox {
+                        width: 750px;
+                        img.pic {
+                            width: 750px;
+                        }
+                    }
+                    .goodtabs {
+                        height: 30px;
+                        line-height: 30px;
+                        color: #fff;
+                        padding-left: 20px;
+                        background: #78b5f4;
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    .goodBox {
+                        img.spepic {
+                            float: left;
+                            width: 230px;
+                            padding-left: 20px;
+                        }
+                    }
+                    .eva {
+                        width: 725px;
+                        padding: 18px 20px;
+                        border-bottom: 1px solid #e8e8e8;
+                        .el {
+                            width: 600px;
+                            line-height: 20px;
+                            .icon_xin5 {
+                                width: 65px;
+                                height: 12px;
+                                margin-top: 10px;
+                                background: url(../images/goodimages/icon_xin.png) no-repeat;
+                            }
+                        }
+                        .er {
+                            width: 120px;
+                            text-align: right;
+                            line-height: 20px;
+                            .shenfen {
+                                color: #929292;
+                            }
+                            .time {
+                                color: #acacac;
+                            }
+                        }
+             
+                    }
+                    .grouptips {
+                        width: 723px;
+                        height: 52px;
+                        padding: 6px 20px 0 20px;
+                        margin-top: 10px;
+                        background: #f8f8f8;
+                        border: 1px solid #e4e4e4;
+                        margin-bottom: 15px;
+                        .prodRedTxt {
+                            color: #f00;
+                        }
+                    }
+                    .qanda {
+                        .tags {
+                            margin-top: 8px;
+                            text-align: right;
+                            color: #acacac;
+                            padding-right: 20px;
+                        }
+                    }
+                    .evazx {
+                        padding-top: 5px;
+                    }
+                    .ques {
+                        color: #2a7dd3;
+                        padding: 0 20px;
+                    }
+                    .huifu {
+                        line-height: 20px;
+                        padding: 9px 20px;
+                        border-bottom: 1px solid #e4e4e4;
+                    }
+                    .topj {
+                        text-align: right;
+                        margin-top: 7px;
+                        .quesbtn {
+                            width: 75px;
+                            height: 29px;
+                            cursor: pointer;
+                            background: url(../images/goodimages/btnGroup.gif) no-repeat 0px -191px;
+                        }
+                    }
+                }
+            }
+            
+            
+            
             
         }
     }
